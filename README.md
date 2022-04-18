@@ -1,1 +1,1 @@
-# Configurations
+# Goldendict theme
