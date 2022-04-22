@@ -11,7 +11,7 @@
  
 * {
 	font-family: "Cantarell", sans-serif !important;
-	line-height: 170% !important;
+	line-height: 160% !important;
 	/*-webkit-font-smoothing: antialiased;*/
 }
 
@@ -23,8 +23,8 @@ html{
 body {
 	/* texte */
 	text-align: justify;
-	font-size: 1.27rem !important;
-	line-height: 170% !important;
+	font-size: 1.1rem !important;
+	line-height: 160% !important;
 	
 	background: #fdf6e3 !important;
 	color: #586e75 !important;
