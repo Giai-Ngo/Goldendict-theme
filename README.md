@@ -8,7 +8,7 @@ Or unzip *styles.zip* into *~/.goldendict/styles*
 
 # Default theme
 
-![](Screenshot.png)
+![](/Default/Screenshot.png)
 
 # Light theme
 
