@@ -1,0 +1,272 @@
+/* ========================================== */
+/*         This file is encoded UTF-8         */
+/*      based on Display style: Babylone      */
+/*                 ~ giải ngố                 */
+/* ========================================== */
+
+
+/**
+ * Général
+ */
+ 
+* {
+	font-family: sans-serif !important;
+	line-height: 170% !important;
+	-webkit-font-smoothing: antialiased;
+	
+}
+
+html{
+	/*background: #2e3436ff !important;*/
+	background: #353535 !important;
+	color: #fafafaff !important;
+}
+
+body, tbody, div {	/* texte */
+	text-align: justify;
+	font-size: 1rem !important;
+	/*background: #2e3436ff !important;*/
+	background: #353535 !important;
+  color: #fafafaff !important;
+}
+
+
+/**
+ * Each acticle
+ */
+
+.gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
+	padding: .3em;
+  /*background: #2e3436ff !important;*/
+  background: #353535 !important;
+}
+
+.gddictname /* name of each dictionary */  { 
+	border: 1px dotted #888a85;
+	border-radius: 8px;
+	background : #3A3E40 !important;
+	color: #fafafaff !important;
+	font-size: 1em; /* texte */
+	margin-top: 1em; /* outline */
+}
+
+.gddicttitle, .gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
+	padding: 7px;
+	background : none !important;
+}
+
+.gdcollapseicon{
+	background : default !important;
+}
+
+.gddicticon img {
+	vertical-align: middle;
+}
+
+a {
+	color: #64abdb !important;
+}
+
+a:visited {
+	color: olive !important;
+}
+
+ul, span {
+	color: #fdf6e3;
+}
+
+
+/**
+ * OALD9 Dictionary ou Mdict
+ */
+
+.mdict,
+.mdict ol,
+.head-jump-pos,
+.head-jump-entry,
+.h-g,
+sn-gs,
+.sn-g,
+.x-gs,
+.xg,
+.rx-g,
+.x,
+.num,
+.def,
+.label-g,
+.collapse {
+	color: #fefefe !important;
+}
+
+.mdict font[color="darkred"], .mdict font[color="navy"], .mdict font[color="#306090"], .mdict font[color="#225577"], .mdict font[color="#664466"]{
+	color: #64abdb !important;
+}
+
+.mdict font[color="maroon"], .mdict font[color="#800080"] {
+	color: tomato !important;
+}
+
+
+/**
+ * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
+ */
+ 
+.sdct_x [style="color:darkslateblue"]{
+	color: #64abdb !important;
+}
+
+.xdxf_dtrn {
+	background: #353535/*#2e3436ff*/ !important;
+	color: #fefefe !important;
+}
+
+.sdct_x [style="color:maroon"]{
+	color: tomato !important;
+}
+
+
+.sdct_x [style="color:darkmagenta"] {
+	color: magenta !important;
+}
+
+.sdct_x [style="color:navy"] {
+	color: tomato !important;
+}
+
+.sdct_x [style="color:tomato"] {
+	color: olive !important;
+}
+
+.sdct_x [style="color:blue"] {
+	color: lightblue !important;
+}
+
+/**
+ * Old Dictionaries using DSL format
+ */
+.gdarticlebody > span:first-child .dsl_headwords,
+.gdarticlebody > h3:first-child {
+	margin-top: -3px;
+	display: none;
+}
+
+.gdspellsuggestion {
+	margin-top: 1.5em; /* Add some vertical space before the article */
+}
+
+.dsl_headwords {
+	display: none;
+}
+
+b.dsl_b font[color="blue"] {
+	color: tomato !important;
+}
+
+.dsl_m0  font[color="brown"] {
+	color: tomato !important;
+}
+
+.dsl_m0  font[color="darkmagenta"] {
+	color: magenta !important;
+}
+.dsl_m1 {
+	color: #64abdb !important;
+}
+
+.dsl_m2 font[color="darkviolet"]  {
+	color: violet !important;
+}
+
+.dsl_m3 font[color="crimson"]  {
+	color: #fefefe !important;
+}
+
+.dsl_m3 font[color="darkslateblue"]  {
+	color: lightblue !important;
+}
+
+.dsl_m3 font[color="mediumvioletred"], .dsl_m3 font[color="darkslategray"] {
+	color: #687C82 !important;
+}
+
+.dsl_m4 font[color="darkslategray"], .dsl_m3 font[color="orangered"] {
+	color: grey !important;
+}
+
+.dsl_m5 font[color="dimgray"]  {
+	color: lightblue !important;
+}
+
+.dsl_p {
+	color: #b58900ff !important;
+}
+
+.dsl_b font[color="blue"], .dsl_b font[color="darkslategray"]{
+	color: #586e75 !important;
+}
+
+.dsl_b font[color="dimgray"] {
+	color: lightgray !important;
+}
+
+.dsl_lang {
+  color: white !important;
+}
+
+/**
+ * Wiki
+ */
+
+.mwiki div.thumb {
+	border-color: #353535 !important;
+}
+
+.mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
+	background-color: #353535/*#2e3436ff*/ !important;
+}
+
+div#toc.toc {
+	display: none;
+}
+
+div.NavHead {
+	background-color: #3A3E40 !important;
+}
+
+th, tr, td {
+	background-color: #353535/*#2e3436ff*/ !important;
+}
+
+div.thumbcaption {
+	color: gray !important;
+}
+
+abbr{
+	color: lightblue !important;
+}
+
+
+/**
+ * .bgl
+ */
+ 
+div font[color="#0000CD"]{
+	color: lightblue !important;
+}
+
+div font[color="#B22222"]{
+	color: olive !important;
+}
+
+div font[color="#556B2F"]{
+	color: darkolivegreen !important;
+}
+
+div font[color="#A50021"], div font[color="#74726D"]{
+	color: #fefefe !important;
+}
+
+div font[color="blue"]]{
+	color: red !important;
+}
+
