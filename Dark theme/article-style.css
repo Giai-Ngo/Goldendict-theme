@@ -98,6 +98,11 @@ sn-gs,
 	color: #fefefe !important;
 }
 
+.mdict .headword {
+  font-size: 1em !important;
+  font-weight: bold;
+}
+
 .mdict font[color="darkred"], .mdict font[color="navy"], .mdict font[color="#225577"] {
 	color: #64abdb !important;
 }
@@ -252,6 +257,10 @@ b.dsl_b font[color="blue"] {
 
 .dsl_b font[color="blue"] {
 	color: #586e75 !important;
+}
+
+.dsl_b font[color="darkslateblue"] {
+	color: slateblue !important;
 }
 
 .dsl_b font[color="darkslategray"]{
