@@ -1,7 +1,6 @@
 /* ========================================== */
 /*         This file is encoded UTF-8         */
 /*      based on Display style: Babylone      */
-/*          Inspired Solarized theme          */
 /*                 ~ giải ngố                 */
 /* ========================================== */
 
@@ -10,7 +9,7 @@
  */
  
 * {
-	font-family: "Cantarell", sans-serif !important;
+	font-family: sans-serif !important;
 	line-height: 170% !important;
 	/*-webkit-font-smoothing: antialiased;*/
 }
@@ -23,7 +22,7 @@ html{
 body {
 	/* texte */
 	text-align: justify;
-	font-size: 1.27rem !important;
+	font-size: 1rem !important;
 	line-height: 170% !important;
 	
 	background: #fdf6e3 !important;
@@ -335,3 +334,38 @@ table,
 .sdct_h font[face="Palatino Linotype"] {
 	font-family: "Cantarell" !important;
 }
+
+
+/**
+ * Scrollbars
+ **/
+
+::-webkit-scrollbar {
+  background-color: #fdf6e3;
+  width: 11px;
+  overflow: auto
+	-webkit-overflow-scrolling: touch;
+	padding-right: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: #363636;
+  border-left: 6px solid #fdf6e3;
+  border-right: 1px solid #fdf6e3;
+  border-top: 2px solid #fdf6e3;
+  border-bottom: 2px solid #fdf6e3;
+  border-radius: 20px 11px 11px 20px;
+  min-height: 30px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: #363636;
+  border: 2px solid #fdf6e3;
+  border-radius: 19px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: #0080ff;
+}
+
+
