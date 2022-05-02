@@ -352,3 +352,36 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 #C_C font {
  color: lightgray !important;
 }
+
+/**
+
+ * Scrollbars
+ **/
+
+::-webkit-scrollbar {
+  background-color: #353535;
+  width: 11px;
+  overflow: auto
+	-webkit-overflow-scrolling: touch;
+	padding-right: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: lightgray;
+  border-left: 6px solid #353535;
+  border-right: 1px solid #353535;
+  border-top: 2px solid #353535;
+  border-bottom: 2px solid #353535;
+  border-radius: 20px 11px 11px 20px;
+  min-height: 30px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background: lightgray;
+  border: 2px solid #353535;
+  border-radius: 19px;
+} 
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: #0080ff;
+}
