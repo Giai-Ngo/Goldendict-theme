@@ -138,6 +138,9 @@ div#toc.toc {
 	color: #586e75 !important;
 }
 
+.dsl_opt {
+ display: inline;
+}
 
 /**
  * OALD9 Dictionary ou Mdict
