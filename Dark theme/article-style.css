@@ -103,7 +103,7 @@ sn-gs,
   font-weight: bold;
 }
 
-.mdict font[color="darkred"], .mdict font[color="navy"], .mdict font[color="#225577"] {
+.mdict font[color="darkred"], span[color="navy"], .mdict font[color="#225577"] {
 	color: #64abdb !important;
 }
 
@@ -151,11 +151,11 @@ sn-gs,
 
 
 .sdct_x [style="color:darkmagenta"] {
-	color: gray !important;
+	color: #64abdb !important;
 }
 
 .sdct_x [style="color:navy"] {
-	color: tomato !important;
+	color: gray !important;
 }
 
 .sdct_x [style="color:tomato"] {
@@ -360,7 +360,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 
 ::-webkit-scrollbar {
   background-color: #353535;
-  width: 11px;
+  width: 10px; /*11*/
   overflow: auto
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
@@ -372,7 +372,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
   border-right: 1px solid #353535;
   border-top: 2px solid #353535;
   border-bottom: 2px solid #353535;
-  border-radius: 20px 11px 11px 20px;
+  border-radius: 20px 10px 10px 20px; /*20px 11px 11px 20px*/
   min-height: 30px;
 }
 
