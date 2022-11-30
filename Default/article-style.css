@@ -16,6 +16,7 @@
 }
 
 html{
+  background-color: white !important;
 	color: #586e75 !important;
 }
 
@@ -35,6 +36,7 @@ body {
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .3em;
+	background-color: white !important;
 }
 
 .gddictname /* name of each dictionary */ { 
@@ -312,6 +314,7 @@ table,
 
 
 .xdxf_dtrn {
+  background: white;
 	font-weight:normal;
 	color: #586e75;
 }
