@@ -18,7 +18,7 @@
 
 html{
 	/*background: #2e3436ff !important;*/
-	background: #353535 !important;
+	background: #2e3436 !important;
 	color: #fafafaff !important;
 }
 
@@ -26,7 +26,7 @@ body, tbody, div {	/* texte */
 	text-align: justify;
 	font-size: 1rem !important;
 	/*background: #2e3436ff !important;*/
-	background: #353535 !important;
+	background: #2e3436 !important;
  color: #fafafaff !important;
 }
 
@@ -38,7 +38,7 @@ body, tbody, div {	/* texte */
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .3em;
  /*background: #2e3436ff !important;*/
- background: #353535 !important;
+ background: #2e3436 !important;
 }
 
 .gddictname /* name of each dictionary */ { 
@@ -141,7 +141,7 @@ sn-gs,
 }
 
 .xdxf_dtrn {
-	background: #353535/*#2e3436ff*/ !important;
+	background: #2e3436/*#2e3436ff*/ !important;
 	color: #fefefe !important;
 }
 
@@ -185,6 +185,10 @@ sn-gs,
 
 .dsl_article, .dsl_definition, .dsl_ex, .dsl_opt, .dsl_lang, .dsl_m0, .dsl_m1, .dsl_m2, .dsl_m3, .dsl_m4, .dsl_u, .dsl_b, .dsl_i {
  color: white !important;
+}
+
+.dsl_opt {
+ display: inline;
 }
 
 .dsl_s_wav {
@@ -288,11 +292,11 @@ b.dsl_b font[color="blue"] {
  */
 
 .mwiki div.thumb {
-	border-color: #353535 !important;
+	border-color: #2e3436 !important;
 }
 
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
-	background-color: #353535/*#2e3436ff*/ !important;
+	background-color: #2e3436/*#2e3436ff*/ !important;
 }
 
 div#toc.toc {
@@ -304,7 +308,7 @@ div.NavHead {
 }
 
 th, tr, td {
-	background-color: #353535/*#2e3436ff*/ !important;
+	background-color: #2e3436/*#2e3436ff*/ !important;
 }
 
 div.thumbcaption {
@@ -359,7 +363,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
  **/
 
 ::-webkit-scrollbar {
-  background-color: #353535;
+  background-color: #2e3436;
   width: 10px; /*11*/
   overflow: auto
 	-webkit-overflow-scrolling: touch;
@@ -368,17 +372,17 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 
 ::-webkit-scrollbar-thumb:vertical {
   background: lightgray;
-  border-left: 6px solid #353535;
-  border-right: 1px solid #353535;
-  border-top: 2px solid #353535;
-  border-bottom: 2px solid #353535;
+  border-left: 6px solid #2e3436;
+  border-right: 1px solid #2e3436;
+  border-top: 2px solid #2e3436;
+  border-bottom: 2px solid #2e3436;
   border-radius: 20px 10px 10px 20px; /*20px 11px 11px 20px*/
   min-height: 30px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
   background: lightgray;
-  border: 2px solid #353535;
+  border: 2px solid #2e3436;
   border-radius: 19px;
 } 
 
