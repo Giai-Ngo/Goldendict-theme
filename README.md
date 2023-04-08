@@ -4,11 +4,11 @@ Attribution-NonCommercial 2.0 Generic ([CC BY-NC 2.0](https://creativecommons.or
 
 # Goldendict theme
 
-For installation default theme in linux:
+To install the default theme in Linux, you can follow one of these two methods:
 
-Add *article-style.css* and *qt-style.css* into *~/.goldendict*
+- Copy the *article-style.css* and *qt-style.css* files into the *~/.goldendict* directory.
 
-Or unzip *styles.zip* into *~/.goldendict/styles*
+- Unzip the *styles.zip* file into the *~/.goldendict/styles* directory.
 
 ## Default theme
 
