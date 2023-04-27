@@ -12,12 +12,18 @@ To install the default theme in Linux, you can follow one of these two methods:
 
 ## Default theme
 
-![](/Default/Screenshot.png)
+![](Screenshot/Default.png)
 
 ## Light theme
 
-![](/Light%20theme/Screenshot.png)
+![](Screenshot/Light.png)
 
 ## Dark theme
 
-![](/Dark%20theme/Screenshot.png)
+![](Screenshot/Bienvenue.png)
+
+![](Screenshot/Dark.png)
+
+![](Screenshot/Préférences.png)
+
+![](Screenshot/Dicts.png)
