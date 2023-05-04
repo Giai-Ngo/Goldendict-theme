@@ -103,6 +103,9 @@ div#toc.toc {
 	display: none;
 }
 
+span.mw-editsection, table.noprint {
+  display: none;
+}
 
 
 /**
