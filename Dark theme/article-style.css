@@ -13,7 +13,6 @@
 	font-family: "Noto Sans", sans-serif !important;
 	line-height: 170% !important;
 	-webkit-font-smoothing: antialiased;
-	
 }
 
 html{
@@ -27,7 +26,8 @@ body, tbody, div {	/* texte */
 	font-size: 1rem !important;
 	/*background: #2e3436ff !important;*/
 	background: #2e3436 !important;
- color: #fafafaff !important;
+ color: white !important;
+ padding-right: 3px;
 }
 
 
@@ -45,8 +45,9 @@ body, tbody, div {	/* texte */
 	border: 1px dotted #888a85;
 	border-radius: 8px;
 	background : #3A3E40 !important;
-	color: #fafafaff !important;
+	color: white !important;
 	font-size: 1em; /* texte */
+	font-weight:  bold;
 	margin-top: 1em; /* outline */
 }
 
@@ -72,7 +73,7 @@ a:visited {
 }
 
 ul, span {
-	color: #fdf6e3;
+	color: white;
 }
 
 
@@ -135,6 +136,9 @@ sn-gs,
 	color: tomato !important;
 }
 
+.mdict font[color="red"] {
+	display: none !important;
+}
 
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
@@ -153,6 +157,9 @@ sn-gs,
 	color: tomato !important;
 }
 
+.sdct_x [style="color:firebrick"]{
+	color: tomato !important;
+}
 
 .sdct_x [style="color:darkmagenta"] {
 	color: #64abdb !important;
@@ -364,8 +371,12 @@ div font[color="#A50021"], div font[color="#74726D"]{
 	color: #fefefe !important;
 }
 
-div font[color="blue"]]{
-	color: red !important;
+div font[color="blue"]{
+	color: darkcyan !important;
+}
+
+div font[color="#cc0000"]{
+	color: darkcyan !important;
 }
 
 
