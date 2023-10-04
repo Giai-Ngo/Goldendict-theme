@@ -30,6 +30,9 @@ body, tbody, div {	/* texte */
  padding-right: 3px;
 }
 
+.collapse_expand_area{
+  padding: 0px !important;
+}
 
 /**
  * Each acticle
@@ -406,7 +409,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: lightgray;
+  background: #a4a4a3;
   border-left: 6px solid #2e3436;
   border-right: 1px solid #2e3436;
   border-top: 2px solid #2e3436;
@@ -424,4 +427,3 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
-
