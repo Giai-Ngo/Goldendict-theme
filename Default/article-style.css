@@ -320,8 +320,8 @@ table,
 
 
 .xdxf_dtrn {
-  background: white;
-	font-weight:normal;
+  	background: white;
+	font-weight: normal !important;
 	color: #586e75;
 }
 
