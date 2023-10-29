@@ -327,9 +327,9 @@ table,
 
 
 .xdxf_dtrn {
-	font-weight:normal;
 	background: #fdf6e3;
 	color: #586e75;
+	font-weight: normal !important;
 }
 
 .sdct_x [style="color:firebrick"] {
