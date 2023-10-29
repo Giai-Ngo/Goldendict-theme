@@ -154,6 +154,7 @@ sn-gs,
 .xdxf_dtrn {
 	background: #2e3436/*#2e3436ff*/ !important;
 	color: #fefefe !important;
+	font-weight: normal !important;
 }
 
 .sdct_x [style="color:maroon"]{
