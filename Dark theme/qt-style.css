@@ -5,11 +5,23 @@
 /* ========================================== */
 
 * {
-  font-family: NotoSans, "Noto Sans", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 10.5pt;
+  -webkit-font-smoothing: antialiased;
 }
 
 MainWindow #searchPane #translateLine, MainWindow #searchPane #wordList, MainWindow #dictionariesList, MainWindow #translateLine, ScanPopup #translateLine, MainWindow #wordList, MainWindow #dictsPane #dictsList, MainWindow #historyPane #historyList, MainWindow #favoritesPane #favoritesTree {
-	background: #2e3436;
-	color: #ffffff;
+	background: #2e3436 !important;
+	color: #ffffff !important;
+}
+
+MainWindow {
+	background: #303030 !important;
+	color: #ffffff !important;
+}
+
+MainWindow #menubar::item:pressed {
+  border-bottom: 3px solid #15539e;
+  padding-bottom: -3px;
+  color: #3992cd;
 }
