@@ -34,5 +34,3 @@ To install the default theme in Linux, you can follow one of these two methods:
 
 ![](Screenshot/Préférences.png)
 
-![](Screenshot/Dicts.png)
-
