@@ -16,23 +16,17 @@
 }
 
 html{
-	/*background: #2e3436ff !important;*/
 	background: #2e3436 !important;
 	color: #fafafaff !important;
 }
 
 body, tbody, div {	/* texte */
-	text-align: justify;
+	/*text-align: justify;*/
 	font-size: 1rem !important;
-	/*background: #2e3436ff !important;*/
 	background: #2e3436 !important;
- color: white !important;
- padding-right: 3px;
+  color: #fafafaff !important;
 }
 
-.collapse_expand_area{
-  padding: 0px !important;
-}
 
 /**
  * Each acticle
@@ -40,18 +34,17 @@ body, tbody, div {	/* texte */
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .3em;
- /*background: #2e3436ff !important;*/
- background: #2e3436 !important;
+  background: #2e3436 !important;
 }
 
 .gddictname /* name of each dictionary */ { 
 	border: 1px dotted #888a85;
-	border-radius: 8px;
-	background : #3A3E40 !important;
+	border-radius: 10px;
+	background : #3a3e40 !important;
 	color: white !important;
 	font-size: 1em; /* texte */
 	font-weight:  bold;
-	margin-top: 1em; /* outline */
+	margin: 1em 0 1em 0; /* outline */
 }
 
 .gddicttitle, .gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
@@ -68,17 +61,45 @@ body, tbody, div {	/* texte */
 }
 
 a {
-	color: #64abdb !important;
+	color: lightskyblue !important;
 }
 
 a:visited {
-	color: olive !important;
+	color: #97bf60 !important;
 }
 
 ul, span {
-	color: white;
+	color: white !important;
 }
 
+h3 {
+	color: goldenrod !important;
+}
+
+
+
+/*Từ điển Hán Nôm*/
+header, div.ads-col, form#LookupForm.main-form, footer.small, div.info, div.hvres-nav-dock {
+  display: none !important;
+}
+
+.hvres:not(.hvres-ads) {
+  border-top: 1px dotted silver !important;
+}
+
+section, div#mw-related-navigation {
+  margin: 0 !important;
+}
+
+/*Wiki Grec ancien*/
+div#mw-header-container.ts-container, div#mw-header-nav-hack, div#mw-header-hack.color-bar, div#mw-footer-container.ts-container, div.website_padding, div#menus-cover, div#mw-site-navigation, div#mw-related-navigation, div#content-bottom-stuff, div.visualClear, div#siteNotice {
+  display: none !important;
+}
+
+/* Tự Điển Chữ Nôm - 𡦂喃詞典 */
+
+nav.col-md-3.menuhanviet.sidebar, footer.footer.mt-auto.py-3, div#advcenter, nav {display:none !important;}
+.col-md-9 {flex: 0 0 100% !important;}
 
 /**
  * OALD9 Dictionary ou Mdict
@@ -107,8 +128,24 @@ sn-gs,
   font-weight: bold;
 }
 
-.mdict font[color="darkred"], span[color="navy"], .mdict font[color="#225577"] {
-	color: #64abdb !important;
+.mdict font[color="darkred"] {
+	color: goldenrod !important;
+}
+
+.mdict font[color="#225577"] {
+	color: goldenrod !important;
+}
+
+.mdict font[color="purple"]{
+	color: goldenrod !important;
+}
+
+.mdict font[color="darkmagenta"] {
+	color: goldenrod !important;
+}
+
+.mdict font[color="darkolivegreen"] {
+	color: #b49372 !important;
 }
 
 .mdict font[color="darkblue"] {
@@ -116,7 +153,7 @@ sn-gs,
 }
 
 .mdict font[color="#306090"] {
-	color: olive !important;
+	color: #97bf60 !important;
 }
 
 .mdict font[color="#664466"]{
@@ -127,15 +164,15 @@ sn-gs,
 	color: lightgray !important;
 }
 
-.mdict font[color="darkmagenta"] {
-	color: orchid !important;
+.mdict font[color="olive"] {
+	color: #97bf60 !important;
 }
 
-.mdict font[color="purple"]{
-	color: orchid !important;
+.mdict font[color="maroon"] {
+	color: tomato !important;
 }
 
-.mdict font[color="maroon"], .mdict font[color="#800080"] {
+.mdict font[color="#800080"] {
 	color: tomato !important;
 }
 
@@ -143,18 +180,44 @@ sn-gs,
 	display: none !important;
 }
 
+span[color="navy"] {
+	color: goldenrod !important;
+}
+
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
  */
 
-.sdct_x [style="color:darkslateblue"]{
-	color: darkcyan !important;
-}
 
 .xdxf_dtrn {
-	background: #2e3436/*#2e3436ff*/ !important;
+	background: #2e3436 !important;
 	color: #fefefe !important;
 	font-weight: normal !important;
+}
+
+font[color="black"] {
+	color: white !important;
+	font-weight: normal !important;
+}
+
+font[color="#993300"] {
+	color: orchid !important;
+}
+
+font[color="#000099"] {
+	color: orchid !important;
+}
+
+font[color="#660000"] {
+	color: goldenrod !important;
+}
+
+font[color="Teal"] {
+	color: goldenrod !important;
+}
+
+.sdct_x [style="color:darkslateblue"]{
+	color: goldenrod !important;
 }
 
 .sdct_x [style="color:maroon"]{
@@ -162,28 +225,30 @@ sn-gs,
 }
 
 .sdct_x [style="color:firebrick"]{
-	color: tomato !important;
+	color: white !important;
 }
 
 .sdct_x [style="color:darkmagenta"] {
-	color: #64abdb !important;
+	color: lightskyblue !important;
 }
 
 .sdct_x [style="color:navy"] {
-	color: gray !important;
+	color: olive !important;
 }
 
 .sdct_x [style="color:tomato"] {
-	color: olive !important;
+	color: #97bf60 !important;
 }
 
 .sdct_x [style="color:blue"] {
 	color: lightblue !important;
 }
 
+
 /**
  * Old Dictionaries using DSL format
  */
+ 
 .gdarticlebody > span:first-child .dsl_headwords,
 .gdarticlebody > h3:first-child {
 	margin-top: -3px;
@@ -198,7 +263,7 @@ sn-gs,
 	display: none;
 }
 
-.dsl_article, .dsl_definition, .dsl_ex, .dsl_opt, .dsl_lang, .dsl_m0, .dsl_m1, .dsl_m2, .dsl_m3, .dsl_m4, .dsl_u, .dsl_b, .dsl_i {
+.dsl_article, .dsl_definition, .dsl_ex, .dsl_opt, .dsl_lang, .dsl_u, .dsl_b, .dsl_i {
  color: white !important;
 }
 
@@ -223,7 +288,7 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_m0 font[color="darkmagenta"] {
-	color: orchid !important;
+	color: goldenrod !important;
 }
 
 .dsl_m1 font[color="darkgray"]{
@@ -247,7 +312,11 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_m2 font[color="green"] {
-	color: darkcyan !important;
+	color: tomato !important;
+}
+
+.dsl_m2 font[color="darkslategray"] {
+	color: lightgray !important;
 }
 
 .dsl_m3 font[color="crimson"] {
@@ -255,23 +324,27 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_m3 font[color="darkslateblue"] {
-	color: darkcyan !important;
+	color: tomato !important;
 }
 
 .dsl_m3 font[color="dimgray"] {
-	color: gray !important;
+	color: lightgray !important;
 }
 
-.dsl_m3 font[color="mediumvioletred"], .dsl_m2 font[color="darkslategray"], .dsl_m3 font[color="darkslategray"] {
-	color: lightgray/*#687C82*/ !important;
+.dsl_m3 font[color="mediumvioletred"] {
+	color: lightgray !important;
 }
 
-.dsl_m4 font[color="darkslategray"] {
-	color: lightgrey !important;
+.dsl_m3 font[color="darkslategray"] {
+	color: lightgray !important;
 }
 
 .dsl_m3 font[color="orangered"] {
-	color: lightgrey !important;
+	color: lightgray !important;
+}
+
+.dsl_m4 font[color="darkslategray"] {
+	color: lightgray !important;
 }
 
 .dsl_m5 font[color="dimgray"] {
@@ -287,7 +360,7 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_b font[color="darkslateblue"] {
-	color: darkcyan !important;
+	color: tomato !important;
 }
 
 .dsl_b font[color="darkslategray"]{
@@ -303,7 +376,7 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_i font[color="maroon"] {
-	color: gray !important;
+	color: lightgray !important;
 }
 
 .dsl_lang {
@@ -324,7 +397,7 @@ b.dsl_b font[color="blue"] {
 }
 
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
-	background-color: #2e3436/*#2e3436ff*/ !important;
+	background-color: #2e3436 !important;
 }
 
 div#toc.toc {
@@ -336,11 +409,11 @@ div.NavHead {
 }
 
 th, tr, td {
-	background-color: #2e3436/*#2e3436ff*/ !important;
+	background-color: #2e3436 !important;
 }
 
 div.thumbcaption {
-	color: gray !important;
+	color: lightgray !important;
 }
 
 abbr {
@@ -348,12 +421,13 @@ abbr {
 }
 
 bdi {
-  color: gray !important;
+  color: lightgray !important;
 }
 
 span.mw-editsection, table.noprint {
   display: none;
 }
+
 
 /**
  * .bgl
@@ -364,23 +438,35 @@ div font[color="#0000CD"]{
 }
 
 div font[color="#B22222"]{
-	color: olive !important;
+	color: #97bf60 !important;
 }
 
 div font[color="#556B2F"]{
-	color: darkolivegreen !important;
+	color: #b49372 !important;
 }
 
-div font[color="#A50021"], div font[color="#74726D"]{
+div font[color="#A50021"]{
 	color: #fefefe !important;
 }
 
+div font[color="#74726D"]{
+	color: #fefefe !important;
+}
+
+div font[color="#74726D"]{
+	color: goldenrod !important;
+}
+
 div font[color="blue"]{
-	color: darkcyan !important;
+	color: white !important;
+}
+
+div font[color="#A50021"]{
+	color: silver !important;
 }
 
 div font[color="#cc0000"]{
-	color: darkcyan !important;
+	color: white !important;
 }
 
 
@@ -396,6 +482,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
  color: lightgray !important;
 }
 
+
 /**
 
  * Scrollbars
@@ -410,7 +497,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #a4a4a3;
+  background: lightgray;
   border-left: 6px solid #2e3436;
   border-right: 1px solid #2e3436;
   border-top: 2px solid #2e3436;
@@ -428,3 +515,4 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
+
