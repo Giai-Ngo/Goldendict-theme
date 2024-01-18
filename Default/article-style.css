@@ -41,9 +41,10 @@ body {
 
 .gddictname /* name of each dictionary */ { 
 	border: 1px dotted #888a85;
-	border-radius: 8px;
+	border-radius: 10px;
 	font-size: 1em; /* texte */
-	margin-top: 1em; /* outline */
+	font-weight:  bold;
+	margin: 1em 0 1em 0; /* outline */
 }
 
 .gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
