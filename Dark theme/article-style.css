@@ -84,7 +84,7 @@ header, div.ads-col, form#LookupForm.main-form, footer.small, div.info, div.hvre
 }
 
 .hvres:not(.hvres-ads) {
-  border-top: 1px dotted silver !important;
+  border-top: 1px dotted lightgray !important;
 }
 
 section, div#mw-related-navigation {
@@ -162,6 +162,7 @@ sn-gs,
 
 .mdict font[color="navy"] {
 	color: lightgray !important;
+	font-style: italic !important;
 }
 
 .mdict font[color="olive"] {
@@ -241,7 +242,7 @@ font[color="Teal"] {
 }
 
 .sdct_x [style="color:blue"] {
-	color: lightblue !important;
+	color: orchid !important;
 }
 
 
@@ -263,12 +264,14 @@ font[color="Teal"] {
 	display: none;
 }
 
-.dsl_article, .dsl_definition, .dsl_ex, .dsl_opt, .dsl_lang, .dsl_u, .dsl_b, .dsl_i {
+.dsl_article, .dsl_definition, .dsl_ex, .dsl_lang, .dsl_u, .dsl_b, .dsl_i {
  color: white !important;
 }
 
 .dsl_opt {
- display: inline;
+  display: inline;
+  font-style: italic !important;
+  color: white !important;
 }
 
 .dsl_s_wav {
@@ -277,6 +280,12 @@ font[color="Teal"] {
 
 b.dsl_b font[color="blue"] {
 	color: tomato !important;
+}
+
+font[color="blue"] {
+	color: white !important;
+	font-style: italic !important;
+	margin-left: 2em;
 }
 
 .dsl_m0 font[color="brown"] {
@@ -332,7 +341,8 @@ b.dsl_b font[color="blue"] {
 }
 
 .dsl_m3 font[color="mediumvioletred"] {
-	color: lightgray !important;
+	color: white !important;
+	font-style: italic !important;
 }
 
 .dsl_m3 font[color="darkslategray"] {
@@ -462,11 +472,15 @@ div font[color="blue"]{
 }
 
 div font[color="#A50021"]{
-	color: silver !important;
+	color: lightgray !important;
 }
 
 div font[color="#cc0000"]{
 	color: white !important;
+}
+
+p[align="center"]{
+	display: none !important;
 }
 
 
