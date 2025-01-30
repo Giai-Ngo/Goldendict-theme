@@ -110,7 +110,7 @@ nav.col-md-3.menuhanviet.sidebar, footer.footer.mt-auto.py-3, div#advcenter, nav
 .head-jump-pos,
 .head-jump-entry,
 .h-g,
-sn-gs,
+.sn-gs,
 .sn-g,
 .x-gs,
 .xg,
@@ -505,7 +505,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 ::-webkit-scrollbar {
   background-color: #2e3436;
   width: 10px; /*11*/
-  overflow: auto
+  overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
 }
