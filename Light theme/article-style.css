@@ -155,7 +155,7 @@ span.mw-editsection, table.noprint {
 .head-jump-pos,
 .head-jump-entry,
 .h-g,
-sn-gs,
+.sn-gs,
 .sn-g,
 .x-gs,
 .xg,
@@ -350,7 +350,7 @@ table,
 ::-webkit-scrollbar {
   background-color: #fdf6e3;
   width: 11px;
-  overflow: auto
+  overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
 }
