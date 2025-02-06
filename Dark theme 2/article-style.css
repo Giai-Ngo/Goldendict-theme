@@ -182,6 +182,17 @@ sn-gs,
 	display: none !important;
 }
 
+
+div.cB, div.cB-e, div.dcCorpEx {
+  border: none;
+/*  border: 1px rgba(255, 255, 255, 0.13) dotted !important; */
+  padding: 15px !important;
+}
+
+div.cB.cB-e {
+  border: 1px solid #696666 !important;
+}
+
 span[color="navy"] {
 	color: goldenrod !important;
 }
@@ -195,7 +206,27 @@ span.OALD_n-g {
   font-size: 1rem !important;
 }
 
+hr.hr_after_tittle_box {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
 
+hr {
+  border-top: 1px rgba(255, 255, 255, 0.13) solid !important;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+.mdict .row.vg-header {
+  border-top: 1px rgba(255, 255, 255, 0.13) dotted !important;
+}
+
+.mdict .example_box blockquote {
+  color: #b6b6b6 !important;
+}
 
 
 /**
@@ -440,6 +471,22 @@ font[color="blue"] {
 	background-color: #2e3436 !important;
 }
 
+.mwiki h1, .mwiki h2, .mwiki h3, .mwiki h4, .mwiki h5, .mwiki h6, th.navbox-group {
+  color: white !important;
+}
+
+.mwiki h2 {
+  border-bottom: 1px solid rgba(170, 170, 170, 0.4);
+}
+
+.mwiki div.NavFrame {
+  border: 1px solid rgba(170, 170, 170, 0.4);
+}
+
+p.bloc, caption {
+  background-color: gray !important;
+}
+
 figcaption {
   font-size: .95em !important;
   font-style: italic !important;
@@ -522,6 +569,13 @@ p[align="center"]{
 	display: none !important;
 }
 
+fieldset {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+}
+
 
 /**
  * Từ điển Lạc Việt
@@ -550,7 +604,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: lightgray;
+  background: #696C6C;
   border-left: 6px solid #2e3436;
   border-right: 1px solid #2e3436;
   border-top: 2px solid #2e3436;
@@ -568,5 +622,4 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
-
 
