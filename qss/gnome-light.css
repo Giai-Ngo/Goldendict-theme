@@ -1,0 +1,264 @@
+/* Général */
+
+QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
+    background-color: #f0f0f0; /* Couleur de fond claire */
+    color: #000000; /* Couleur du texte foncée */
+    border: 1px solid #f9f9f9;
+}
+
+QMenu::item:disabled {
+    color: #999999; /* Texte désactivé plus doux */
+}
+
+QWidget {
+    background-color: #ffffff; /* Fond clair */
+    color: #000000; /* Texte foncé */
+    font-family: "Noto Sans", "Adwaita Sans", sans-serif;
+    font-size: 11.54pt;
+}
+
+
+/* Boutons */
+
+QPushButton {
+    background-color: #f6f5f4;
+    color: #000000;
+    padding: 7px 10px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #deddda;
+    color: #000000;
+}
+
+
+/* Champ de saisie */
+
+QLineEdit {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+
+/* Combo Box */
+
+QComboBox {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QComboBox::drop-down {
+    border: 0px solid #cccccc;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+QComboBox::drop-down::icon {
+    image: url(/usr/share/icons/AdwaitaLegacy/48x48/legacy/go-down.png);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+}
+
+QComboBox::item:selected {
+    background-color: #deddda;
+    color: #000000;
+    border-radius: 10px;
+}
+
+
+
+/* Liste et checkBox*/
+
+QListView::item {
+    padding: 4px;
+}
+
+QCheckBox {
+    spacing: 4px;
+}
+
+QCheckBox::indicator {
+    margin: 4px;
+}
+
+
+/* Tableau et Tree */
+
+QHeaderView::section {
+    padding: 4px;
+    background : #deddda;
+}
+
+QTreeView::item {
+    padding: 4px;
+}
+
+
+/* Barre de défilement */
+
+QScrollBar {
+    background: transparent;
+}
+
+QScrollBar::add-line {
+    subcontrol-origin: none;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+QScrollBar::sub-line {
+    subcontrol-origin: none;
+}
+
+QScrollBar::handle {
+    background: #b0b0b0;
+    border-radius: 7px;
+    min-height: 30px;
+    margin: 0 5px 0 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #b0b0b0;
+    border-radius: 7px;
+    min-width: 30px;
+    margin: 5px 0 4px 0;
+}
+
+QScrollBar::handle:hover,
+QScrollBar::add-line:hover,
+QScrollBar::sub-line:hover {
+    background: #1c71d8;
+    margin: 0 3px 0 2px;
+border-radius: 7px;
+}
+
+QScrollBar::handle:horizontal:hover,
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:hover {
+    background: #1c71d8;
+    margin: 3px 0 2px 0;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+}
+
+QScrollBar:vertical:disabled {
+    background: none;
+}
+
+
+/* Cacher la barre de défilement si non nécessaire */
+
+QScrollArea {
+    border: none;
+}
+
+QScrollArea::corner {
+    background: none;
+}
+
+
+/* Case à cocher */
+
+QCheckBox {
+    spacing: 5px;
+}
+
+
+/* Bouton radio */
+
+QRadioButton {
+    spacing: 5px;
+}
+
+
+/* ToolTip */
+
+QToolTip {
+    background: #5e5c64;
+    border-radius: 10px !important;
+    padding: 2px;
+    color: #ffffff;
+}
+
+
+/* Menu */
+
+QMenuBar {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    border: 1px;
+}
+
+QMenu::item {
+    padding:  6px 10px;
+    margin: 0 3px;
+}
+
+QMenu::item:selected {
+    background-color: #f6f5f4;
+    color: #000000;
+    border-radius: 10px;
+}
+
+
+/* TabBar */
+
+QTabBar::tab, QTabWidget {
+    color: #202020;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    margin: 0 2px;
+}
+
+QTabBar::tab:selected {
+    /*color: palette(bright-text);*/
+    border-bottom: 4px solid #1c71d8;
+    padding: 7px 10px 3px 10px;
+}
+
+QTabBar::tab:hover {
+    /*color: #202020;*/
+    background-color: #dddddd;
+    border-bottom: 4px solid #aaaaaa;
+    padding: 7px 10px 3px 10px;
+}
+
+
+/* MenuBar */
+
+QMenuBar {
+    color: #202020;
+    border: none;
+    padding: 5px 10px 7px 10px;
+}
+
+QMenuBar::item:selected {
+    color: palette(bright-text);
+    border-bottom: 3px solid palette(highlight);
+    padding: 5px 10px 4px 10px;
+}
