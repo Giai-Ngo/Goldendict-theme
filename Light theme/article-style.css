@@ -108,6 +108,16 @@ span.mw-editsection, table.noprint {
   display: none;
 }
 
+figure {
+  text-align: center;
+}
+
+
+figcaption {
+  font-size: .9em !important;
+  font-style: italic !important;
+}
+
 
 /**
  * Old Dictionaries using DSL format
@@ -348,30 +358,29 @@ table,
  **/
 
 ::-webkit-scrollbar {
-  background-color: #fdf6e3;
+  background-color: white;
   width: 11px;
-  overflow: auto;
+  overflow: auto
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #363636;
-  border-left: 6px solid #fdf6e3;
-  border-right: 1px solid #fdf6e3;
-  border-top: 2px solid #fdf6e3;
-  border-bottom: 2px solid #fdf6e3;
+  background: #c0bfbc;
+  border-left: 6px solid white;
+  border-right: 1px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
   border-radius: 20px 11px 11px 20px;
   min-height: 30px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: #363636;
-  border: 2px solid #fdf6e3;
+  background: #c0bfbc;
+  border: 2px solid white;
   border-radius: 19px;
-}
+} 
 
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
-
