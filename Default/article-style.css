@@ -105,6 +105,16 @@ span.mw-editsection, table.noprint {
   display: none;
 }
 
+figure {
+  text-align: center;
+}
+
+
+figcaption {
+  font-size: .9em !important;
+  font-style: italic !important;
+}
+
 
 /**
  * Old Dictionaries using DSL format
@@ -343,13 +353,13 @@ table,
 ::-webkit-scrollbar {
   background-color: white;
   width: 11px;
-  overflow: auto;
+  overflow: auto
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #363636;
+  background: #c0bfbc;
   border-left: 6px solid white;
   border-right: 1px solid white;
   border-top: 2px solid white;
@@ -359,7 +369,7 @@ table,
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: #363636;
+  background: #c0bfbc;
   border: 2px solid white;
   border-radius: 19px;
 } 
