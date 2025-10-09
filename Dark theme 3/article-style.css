@@ -53,6 +53,10 @@ body, tbody, div {	/* texte */
 	background : none !important;
 }
 
+.gdcollapseicon, .gdexpandicon {
+	padding: 7px !important;
+}
+
 .gdcollapseicon{
 	background : default !important;
 }
