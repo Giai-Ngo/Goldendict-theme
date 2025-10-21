@@ -10,9 +10,9 @@
  */
  
 * {
-	font-family: sans-serif !important;
+	font-family: "Noto Sans", sans-serif !important;
 	line-height: 170% !important;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 html{
@@ -22,7 +22,7 @@ html{
 
 body, tbody, div {	/* texte */
 	/*text-align: justify;*/
-	font-size: 1.04rem !important;
+	font-size: 17.4px !important;/*1.031rem 1.04rem !important;*/
 	background: #2a2e2e !important;
   color: #ffffff !important;
 }
@@ -38,8 +38,8 @@ body, tbody, div {	/* texte */
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px dotted #888a85;
-	border-radius: 10px;
+	border: 1px solid #757575;
+	border-radius: 50px 7px;
 	background : #3f4446 !important;
 	color: white !important;
 	font-size: 1em; /* texte */
@@ -48,17 +48,13 @@ body, tbody, div {	/* texte */
 	margin: 1em 0; /* outline */
 }
 
-.gddicttitle, .gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
-	padding: 7px;
+.gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
+	padding: 7px !important;
 	background : none !important;
 }
 
 .gdcollapseicon, .gdexpandicon {
 	padding: 7px !important;
-}
-
-.gdcollapseicon{
-	background : default !important;
 }
 
 .gddicticon img {
@@ -491,8 +487,12 @@ p.bloc, caption {
   background-color: gray !important;
 }
 
+figure {
+  text-align: center;
+}
+
 figcaption {
-  font-size: .95em !important;
+  font-size: .9em !important;
   font-style: italic !important;
 }
 
@@ -607,6 +607,7 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 	padding-right: 10px;
 }
 
+
 ::-webkit-scrollbar-thumb:vertical {
   background: #696C6C;
   border-left: 6px solid #2a2e2e;
@@ -626,5 +627,4 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
-
 
