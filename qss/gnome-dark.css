@@ -1,5 +1,7 @@
 
 
+
+
 /* Général */
 
 QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
@@ -8,17 +10,12 @@ QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
     border: 1px solid #2e2e2e;
 }
 
-QMenu::item:disabled {
-    color: #aaaaaa; /* Text color for disabled items */
-}
-
 QWidget {
     background-color: #303030; /* Fond sombre */
     color: #ffffff; /* Texte clair */
-    font-family: "Noto Sans", "Adwaita Sans", sans-serif; /* Police de style GNOME */
-    font-size: 11.54pt;  /* Taille de police Noto Sans 11.54, Adwaita Sans 11.12pt*/
+    font-family: "Noto Sans", sans-serif; /* Police de style GNOME */
+    font-size: 12pt; /* 11.62pt Taille de police */
 }
-
 
 
 /* Boutons */
@@ -32,7 +29,7 @@ QPushButton {
 }
 
 QPushButton:hover {
-    background-color: palette(highlight); /* Fond bleu au survol  #218fa3 ou palette(highlight) ou     palette(highlight)    */
+    background-color: palette(highlight); /* Fond bleu au survol */
 }
 
 
@@ -60,37 +57,87 @@ QComboBox {
     padding: 4px;  /*Rembourrage */
 }
 
-QComboBox::drop-down {
-    border: 0px solid #666666; /* No border for the dropdown button */
+QComboBox::item:selected {
+    background-color: #0078d7; /* Blue background for selected item */
+    color: white; /* White text for selected item */
 }
 
+QComboBox::drop-down {
+    border: 0px solid #666666;
+}
 
 QComboBox::drop-down::icon {
-    image: url(/usr/share/icons/AdwaitaLegacy/48x48/legacy/go-down.png); /* Chemin vers votre icône de flèche */
-    width: 12px; /* Largeur de l'icône */
-    height: 12px; /* Hauteur de l'icône */
+    image: url(/usr/share/icons/breeze-dark/actions/16/go-down); /* Chemin vers votre icône de flèche */
+    width: 10px; /* Largeur de l'icône */
+    height: 10px; /* Hauteur de l'icône */
     margin: 10px;
 }
 
-QComboBox::item:selected {
-    background-color: palette(highlight); /* Blue background for selected item */
-}
 
-
-
-
-/* Liste et checkBox*/
+/* Liste*/
 
 QListView::item {
-    padding: 4px; /* Espace à l'intérieur des éléments */
+    padding: 5px; /* Espace à l'intérieur des éléments */
 }
 
+
+
+/* CheckBox*/
+
 QCheckBox {
-    spacing: 4px; /* Espace entre la case à cocher et le texte */
+    spacing: 7px; /* Espace entre la case à cocher et le texte */
+    border: 0px solid red;
+    background: none;
 }
 
 QCheckBox::indicator {
-    margin: 4px; /* Espace autour de la case à cocher */
+    width: 15px;
+    height: 15px;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    border: 1px solid palette(highlight);;
+    background: palette(highlight);;
+}
+
+QCheckBox::indicator:hover {
+    border: 1px solid palette(highlight);;
+}
+
+
+
+
+/* Bouton radio */
+
+QRadioButton {
+    spacing: 8px; /* Espace entre le bouton et le label */
+}
+
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    background: #fff;
+}
+
+QRadioButton::indicator:hover {
+    border-color: palette(highlight);;
+}
+
+QRadioButton::indicator:checked {
+    border: 1px solid #1976D2;
+    background: qradialgradient(cx:0.5, cy:0.5, radius:0.5,
+    fx:0.5, fy:0.5,
+    stop:0 #1976D2, stop:0.55 #1976D2, stop:0.56 transparent);
+}
+
+QRadioButton:disabled, QRadioButton::indicator:disabled {
+    color: #aaa;
+    border-color: #ddd;
+    background: none;
 }
 
 
@@ -170,31 +217,7 @@ QScrollBar:vertical:disabled {
 
 
 
-/* Cacher la barre de défilement si non nécessaire */
 
-QScrollArea {
-    border: none; /* Pas de bordure */
-}
-
-QScrollArea::corner {
-    background: none; /* Pas de fond pour le coin */
-}
-
-
-
-/* Case à cocher */
-
-QCheckBox {
-    spacing: 5px; /* Espace entre la case et le label */
-}
-
-
-
-/* Bouton radio */
-
-QRadioButton {
-    spacing: 5px; /* Espace entre le bouton et le label */
-}
 
 
 
@@ -211,20 +234,16 @@ QToolTip{
 
 /* Menu */
 
-
-QMenuBar {
-    background-color: #2a2a2a; /* Fond de la barre de menu */
-    color: white; /* Couleur du texte du menu */
-}
-
 QMenu {
-    background-color: #2a2a2a; /* Fond du menu */
-    border: none; /* Bordure du menu */
+    border: none;
+    background-color: #36363a; /* Fond du menu */
+    border-radius: 12px !important; /* rayon des coins du menu */
+    margin: 2px;
 }
 
 QMenu::item {
-    padding:  6px 10px; /* Rembourrage pour les éléments du menu */
-    margin: 0 3px;
+    padding:  6px 20px; /* Rembourrage pour les éléments du menu */
+    border-radius: 6px;
 }
 
 QMenu::item:selected {
@@ -232,11 +251,39 @@ QMenu::item:selected {
     color: white; /* Couleur du texte en surlignage */
 }
 
+QMenu::item:disabled {
+    color: #aaaaaa; /* Text color for disabled items */
+}
+
+/* Séparateur (optionnel) */
+QMenu::separator {
+    height: 1px;
+    margin: 6px 8px;
+    background: rgba(255,255,255,0.06);
+    color: transparent;
+}
+
+
+/* MenuBar */
+
+QMenuBar {
+    color: #e0e0e0; /* Couleur du texte des onglets non sélectionnés */
+    border: none;
+    padding: 5px 10px 7px 10px;
+
+}
+
+QMenuBar::item:selected {
+    color: palette(bright-text); /* Couleur du texte de l'onglet sélectionné */
+    border-bottom: 3px solid palette(highlight); /* Couleur de surlignage */
+    padding: 5px 10px 4px 10px;
+}
+
 
 
 /* TabBar */
 
-QTabBar::tab, QTabWidget {
+QTabBar::tab {
     color: #e0e0e0; /* Couleur du texte des onglets non sélectionnés */
     border: none;
     padding: 7px 10px 7px 10px;
@@ -254,21 +301,5 @@ QTabBar::tab:hover {
     background-color: #3e3e3e;
     border-bottom: 4px solid #525252; /* Couleur de surlignage */
     padding: 7px 10px 3px 10px;
-}
-
-
-/* MenuBar */
-
-QMenuBar {
-    color: #e0e0e0; /* Couleur du texte des onglets non sélectionnés */
-    border: none;
-    padding: 5px 10px 7px 10px;
-
-}
-
-QMenuBar::item:selected {
-    color: palette(bright-text); /* Couleur du texte de l'onglet sélectionné */
-    border-bottom: 3px solid palette(highlight); /* Couleur de surlignage */
-    padding: 5px 10px 4px 10px;
 }
 
