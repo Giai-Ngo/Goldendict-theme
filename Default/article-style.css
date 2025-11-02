@@ -50,8 +50,21 @@ body {
 	margin: 1em 0; /* outline */
 }
 
-.gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
-	padding: 7px;
+.gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
+	padding: 7px !important;
+	background : none !important;
+}
+
+.gdcollapseicon, .gdexpandicon {
+	padding: 7px !important;
+	height: 12px;
+	width: 12px;
+}
+
+.gdcollapseicon:hover, .gdexpandicon:hover {
+	padding: 7px !important;
+	height: 12px;
+	width: 12px;
 }
 
 .gddicticon img {
