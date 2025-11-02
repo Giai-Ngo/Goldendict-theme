@@ -10,23 +10,23 @@
  */
  
 * {
-	font-family: sans-serif !important;
+	font-family: "Go Noto Kurrent-Regular", "Noto Sans", sans-serif !important;
 	line-height: 170% !important;
-	/*-webkit-font-smoothing: antialiased;*/
+	-webkit-font-smoothing: antialiased;
 }
 
 html{
   background-color: white !important;
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 body {
 	/* texte */
 	text-align: justify;
-	font-size: 1rem !important;
+	font-size: 17.4px !important;
 	line-height: 170% !important;
 	
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 
@@ -40,11 +40,14 @@ body {
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px dotted #888a85;
-	border-radius: 10px;
+	border: 1px solid #deddda;
+	border-radius: 50px 7px;
+	background : #f6f5f4 !important;
+	color: black !important;
 	font-size: 1em; /* texte */
 	font-weight:  bold;
-	margin: 1em 0 1em 0; /* outline */
+	padding: .5em;
+	margin: 1em 0; /* outline */
 }
 
 .gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
@@ -64,7 +67,7 @@ a:link {
 }
 
 ul {
-	color: #586e75;
+	color: #241f31;
 }
 
 .gdarticlebody font[color="blue"], .gdarticlebody font[color="#cc0000"] {
@@ -72,7 +75,7 @@ ul {
 }
 
 .gdarticlebody font[color="#A50021"], .gdarticlebody font[color="navy"] {
-	color: #586e75;
+	color: #241f31;
 }
 
 .gdarticlebody font[color="#0000CD"] {
@@ -97,13 +100,6 @@ ul {
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
 }
 
-div#toc.toc {
-	display: none;
-}
-
-span.mw-editsection, table.noprint {
-  display: none;
-}
 
 figure {
   text-align: center;
@@ -115,6 +111,13 @@ figcaption {
   font-style: italic !important;
 }
 
+div#toc.toc {
+	display: none;
+}
+
+span.mw-editsection, table.noprint {
+  display: none;
+}
 
 /**
  * Old Dictionaries using DSL format
@@ -134,11 +137,11 @@ figcaption {
 }
 
 .dsl_m1 {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 .dsl_m3 font[color="mediumvioletred"] {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 .dsl_p {
@@ -146,7 +149,7 @@ figcaption {
 }
 
 .dsl_b font[color="blue"] {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 .dsl_opt {
@@ -162,7 +165,7 @@ figcaption {
 .head-jump-pos,
 .head-jump-entry,
 .h-g,
-.sn-gs,
+sn-gs,
 .sn-g,
 .x-gs,
 .xg,
@@ -172,7 +175,7 @@ figcaption {
 .def,
 .label-g,
 .collapse {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 div .mdict {
@@ -256,7 +259,7 @@ div .mdict {
 .sense,
 .neutral,
 .exas li {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 .hyphenation,
@@ -313,11 +316,11 @@ table,
 #mh_n_T_id,
 #mh_T_id,
 #C_C {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 #C_C font {
-	color: #586e75 !important;
+	color: #241f31 !important;
 }
 
 
@@ -331,9 +334,9 @@ table,
 
 
 .xdxf_dtrn {
-  	background: white;
+  background: white;
 	font-weight: normal !important;
-	color: #586e75;
+	color: #241f31;
 }
 
 .sdct_x [style="color:firebrick"] {
