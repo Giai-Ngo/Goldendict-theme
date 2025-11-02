@@ -1,2 +1,0 @@
-
-![](Screenshot.png)
