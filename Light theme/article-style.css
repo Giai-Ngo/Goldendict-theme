@@ -9,9 +9,9 @@
  */
  
 * {
-	font-family: sans-serif !important;
+	font-family: "Go Noto Kurrent-Regular", "Noto Sans", sans-serif !important;
 	line-height: 170% !important;
-	/*-webkit-font-smoothing: antialiased;*/
+	-webkit-font-smoothing: antialiased;
 }
 
 html{
@@ -22,7 +22,7 @@ html{
 body {
 	/* texte */
 	text-align: justify;
-	font-size: 1rem !important;
+	font-size: 17.4px !important;
 	line-height: 170% !important;
 	
 	background: #fdf6e3 !important;
@@ -40,16 +40,31 @@ body {
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px dotted #888a85;
-	border-radius: 10px;
-	background : #ffffff !important;
+	border: 1px solid #deddda;
+	border-radius: 50px 7px;
+	background : white !important;
+	color: #555555 !important;
 	font-size: 1em; /* texte */
 	font-weight:  bold;
-	margin: 1em 0 1em 0; /* outline */
+	padding: .5em;
+	margin: 1em 0; /* outline */
 }
 
-.gddicticon, .collapse_expand_area { /* dictionary icon and collapse + expand */
-	padding: 7px;
+.gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
+	padding: 7px !important;
+	background : none !important;
+}
+
+.gdcollapseicon, .gdexpandicon {
+	padding: 7px !important;
+	height: 12px;
+	width: 12px;
+}
+
+.gdcollapseicon:hover, .gdexpandicon:hover {
+	padding: 7px !important;
+	height: 12px;
+	width: 12px;
 }
 
 .gddicticon img {
@@ -108,16 +123,6 @@ span.mw-editsection, table.noprint {
   display: none;
 }
 
-figure {
-  text-align: center;
-}
-
-
-figcaption {
-  font-size: .9em !important;
-  font-style: italic !important;
-}
-
 
 /**
  * Old Dictionaries using DSL format
@@ -165,7 +170,7 @@ figcaption {
 .head-jump-pos,
 .head-jump-entry,
 .h-g,
-.sn-gs,
+sn-gs,
 .sn-g,
 .x-gs,
 .xg,
@@ -338,9 +343,9 @@ table,
 
 
 .xdxf_dtrn {
+	font-weight: normal !important;
 	background: #fdf6e3;
 	color: #586e75;
-	font-weight: normal !important;
 }
 
 .sdct_x [style="color:firebrick"] {
@@ -358,7 +363,7 @@ table,
  **/
 
 ::-webkit-scrollbar {
-  background-color: white;
+  background-color: #fdf6e3;
   width: 11px;
   overflow: auto
 	-webkit-overflow-scrolling: touch;
@@ -366,21 +371,22 @@ table,
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #c0bfbc;
-  border-left: 6px solid white;
-  border-right: 1px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  background: #363636;
+  border-left: 6px solid #fdf6e3;
+  border-right: 1px solid #fdf6e3;
+  border-top: 2px solid #fdf6e3;
+  border-bottom: 2px solid #fdf6e3;
   border-radius: 20px 11px 11px 20px;
   min-height: 30px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: #c0bfbc;
-  border: 2px solid white;
+  background: #363636;
+  border: 2px solid #fdf6e3;
   border-radius: 19px;
-} 
+}
 
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
+
