@@ -35,8 +35,4 @@ To install the default theme in Linux, you can follow one of these two methods:
 
 ![](Screenshot/Préférences.png)
 
-## Dark theme 2
-
-![](Screenshot/Dark_2.png)
-
 
