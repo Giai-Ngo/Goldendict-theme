@@ -228,6 +228,9 @@ hr {
   color: #b6b6b6 !important;
 }
 
+a.link-right.verbtable {
+    background-color: unset !important;
+}
 
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
