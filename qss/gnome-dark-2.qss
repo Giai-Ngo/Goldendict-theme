@@ -2,7 +2,6 @@
 
 
 
-
 /* Général */
 
 QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
@@ -65,12 +64,7 @@ QComboBox {
     color: #ffffff; /* Texte clair */
     border: 1px solid #666666; /* Bordure grise */
     border-radius: 4px; /* Coins arrondis */
-    padding: 5px;  /*Rembourrage */
-}
-
-QComboBox::item:selected {
-    background-color: #0078d7; /* Blue background for selected item */
-    color: white; /* White text for selected item */
+    height: 34px;
 }
 
 QComboBox::drop-down {
@@ -82,8 +76,16 @@ QComboBox::drop-down::icon {
     image: url(/usr/share/icons/breeze-dark/actions/16/go-down); /* Chemin vers votre icône de flèche */
     width: 10px; /* Largeur de l'icône */
     height: 10px; /* Hauteur de l'icône */
-    margin: 10px;
+    margin: 12px;
 }
+
+QComboBox::item:selected {
+    background-color: #0078d7; /* Blue background for selected item */
+    color: white; /* White text for selected item */
+    border-radius: 4px;
+}
+
+
 
 
 
@@ -231,66 +233,69 @@ QHeaderView::section {
 
 
 
-/* Barre de défilement */
+
+
+
+/* Barre de défilement - handle rond largeur 4px */
 
 QScrollBar {
     background: transparent;
     border: none;
+    margin: 3px;
 }
 
-QScrollBar::add-line {
+QScrollBar:hover {
+    background: #40404050;
+    border: none;
+    margin: 3px 3px 3px 3px;
+    border-radius: 4px;
+}
+
+/* Suppression des boutons add/sub */
+QScrollBar::add-line, QScrollBar::sub-line {
     subcontrol-origin: none;
+    background: none;
+    width: 0;
+    height: 0;
 }
 
-QScrollBar::add-line:vertical,
-QScrollBar::sub-line:vertical {
-    height: 0px;
-}
 
-QScrollBar::add-line:horizontal,
-QScrollBar::sub-line:horizontal {
-    width: 0px;
-}
-
-QScrollBar::sub-line {
-    subcontrol-origin: none;
-}
-
-QScrollBar::handle {
-    background: #404040;
-    border-radius: 35px;
+/* Handle - vertical */
+QScrollBar::handle:vertical {
+    background: grey;
+    border-radius: 2px;    /* moitié de 4px pour arrondir */
     min-height: 30px;
-    margin: 0 5px 0 6px; /* Simplification de la marge */
+    width: 4px;
+    margin: 3px 2px 3px 3px;
 }
 
+/* Handle - horizontal */
 QScrollBar::handle:horizontal {
-    background: #404040;
-    border-radius: 35px;
+    background: grey;
+    border-radius: 2px;
     min-width: 30px;
-    margin: 5px 0 6px 0; /* Simplification de la marge */
+    height: 4px;
+    margin: 3px 3px 2px 3px;
 }
 
-QScrollBar::handle:hover,
-QScrollBar::add-line:hover,
-QScrollBar::sub-line:hover {
+/* Hover */
+QScrollBar::handle:hover {
     background: palette(highlight);
-    margin: 0 3px 0 3px; /* Simplification de la marge */
+    margin: 0px;
+    border-radius: 4px;
 }
 
-QScrollBar::handle:horizontal:hover,
-QScrollBar::add-line:horizontal:hover,
-QScrollBar::sub-line:horizontal:hover {
+/* Pressed */
+QScrollBar::handle:pressed {
     background: palette(highlight);
-    margin: 3px 0 3px 0; /* Simplification de la marge */
 }
 
-QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
-    background: none; /* Pas de fond pour les flèches */
+/* Disabled */
+QScrollBar:vertical:disabled, QScrollBar:horizontal:disabled {
+    background: transparent;
 }
 
-QScrollBar:vertical:disabled {
-    background: none; /* Pas de fond si désactivé */
-}
+
 
 
 
@@ -324,12 +329,14 @@ QToolTip{
 
 /* Menu */
 
+
 QMenu {
-  background-color: #2a2d2f;
+  background-color: #36363a;
   color: #e6e9ea;
   border: 1px solid rgba(255,255,255,0.04);
   border-radius: 10px;
   padding: 6px 4px;
+qproperty-dropShadow: 0px 16px 20px rgba(0,0,0,0.45);
 }
 
 QMenu::item {
@@ -451,4 +458,10 @@ QTabBar QToolButton { /* Remplacer l'icône des boutons scroller du QTabBar */
 
 QTabBar QToolButton:disabled { /* état désactivé */
   opacity: 0.45;
+}
+
+/* Zone de contenu (pages) */
+QTabWidget::pane {
+    border: 1px solid #404040;
+    border-radius: 5px;
 }
