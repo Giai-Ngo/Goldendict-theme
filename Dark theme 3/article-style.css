@@ -10,20 +10,20 @@
  */
  
 * {
-	font-family: "Noto Sans", sans-serif !important;
-	line-height: 170% !important;
+	font-family: "Han-Nom Gothic", sans-serif !important;
+	line-height: 150% !important;
   -webkit-font-smoothing: antialiased;
 }
 
 html{
-	background: #2a2e2e !important;
+	background: #2e2e32 !important; 
 	color: #ffffff !important;
 }
 
 body, tbody, div {	/* texte */
 	/*text-align: justify;*/
-	font-size: 17.4px !important;/*1.031rem 1.04rem !important;*/
-	background: #2a2e2e !important;
+	font-size: 21px !important;
+	background: #2e2e32 !important;
   color: #ffffff !important;
 }
 
@@ -34,12 +34,12 @@ body, tbody, div {	/* texte */
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .3em;
-  background: #2a2e2e !important;
+  background: #2e2e32 !important;
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px solid #757575;
-	border-radius: 50px 7px;
+	border: 1px solid #555555;
+	border-radius: 35px 7px 50px 7px;
 	background : #3f4446 !important;
 	color: white !important;
 	font-size: 1em; /* texte */
@@ -49,12 +49,20 @@ body, tbody, div {	/* texte */
 }
 
 .gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
-	padding: 7px !important;
+	padding: 9px !important;
 	background : none !important;
 }
 
 .gdcollapseicon, .gdexpandicon {
-	padding: 7px !important;
+	padding: 9px !important;
+	height: 12px;
+	width: 12px;
+}
+
+.gdcollapseicon:hover, .gdexpandicon:hover {
+	padding: 9px !important;
+	height: 12px;
+	width: 12px;
 }
 
 .gddicticon img {
@@ -198,7 +206,7 @@ span[color="navy"] {
 }
 
 a.popup-button, span.collocate, span.section, ul.exas li, span.body, h1.headword {
-  background-color: #2a2e2e !important;
+  background-color: #2e2e32 !important;
   color : white !important;
 }
 
@@ -232,13 +240,14 @@ a.link-right.verbtable {
     background-color: unset !important;
 }
 
+
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
  */
 
 
 .xdxf_dtrn {
-	background: #2a2e2e !important;
+	background: #2e2e32 !important;
 	color: #fefefe !important;
 	font-weight: normal !important;
 }
@@ -467,11 +476,11 @@ font[color="blue"] {
  */
 
 .mwiki div.thumb {
-	border-color: #2a2e2e !important;
+	border-color: #2e2e32 !important;
 }
 
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
-	background-color: #2a2e2e !important;
+	background-color: #2e2e32 !important;
 }
 
 .mwiki h1, .mwiki h2, .mwiki h3, .mwiki h4, .mwiki h5, .mwiki h6, th.navbox-group {
@@ -508,7 +517,7 @@ div.NavHead {
 }
 
 th, tr, td {
-	background-color: #2a2e2e !important;
+	background-color: #2e2e32 !important;
 }
 
 div.thumbcaption {
@@ -598,36 +607,92 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 
 
 /**
-
  * Scrollbars
  **/
+/*
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  background: #2e2e32;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar:hover{
+  background: #30303050;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  min-height: 40px;
+  min-width: 40px;
+  background: grey;
+  border-radius: 5px;
+  border-left: 3px solid #2e2e32;
+  border-right: 2px solid #2e2e32;
+  border-top: 3px solid #2e2e32;
+  border-bottom: 2px solid #2e2e32;
+}
+
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active{
+  background: #0080ff;
+  border-radius: 4px;
+  border: 0 solid #2e2e32;
+}
+*/
+
 
 ::-webkit-scrollbar {
-  background-color: #2a2e2e;
-  width: 10px; /*11*/
+  background-color: #2e2e32;
+  width: 11px;
   overflow: auto
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
 }
 
-
 ::-webkit-scrollbar-thumb:vertical {
-  background: #696C6C;
-  border-left: 6px solid #2a2e2e;
-  border-right: 1px solid #2a2e2e;
-  border-top: 2px solid #2a2e2e;
-  border-bottom: 2px solid #2a2e2e;
-  border-radius: 20px 10px 10px 20px; /*20px 11px 11px 20px*/
-  min-height: 30px;
+  background: gray;
+  border-left: 7px solid #2e2e32;
+  border-right: 1px solid #2e2e32;
+  border-top: 2px solid #2e2e32;
+  border-bottom: 2px solid #2e2e32;
+  min-height: 40px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: lightgray;
-  border: 2px solid #2a2e2e;
+  background: #0080ff;
+  border: 2px solid #2e2e32;
   border-radius: 19px;
-} 
+}
 
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
 
+
+
+::-webkit-scrollbar:horizontal {
+  background-color: #2e2e32;
+  height: 11px;
+  overflow: auto
+	-webkit-overflow-scrolling: touch;
+	padding-right: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: gray;
+  border-top: 7px solid #2e2e32;
+  border-bottom: 1px solid #2e2e32;
+  border-left: 2px solid #2e2e32;
+  border-right: 2px solid #2e2e32;
+  min-width: 40px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #0080ff;
+  border: 2px solid #2e2e32;
+  border-radius: 19px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:active {
+  background: #0080ff;
+}
