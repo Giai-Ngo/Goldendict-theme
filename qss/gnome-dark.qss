@@ -5,13 +5,13 @@
 /* Général */
 
 QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
-    background-color: #2e2e32; /* Couleur de fond */
+    background-color: #222226; /* Couleur de fond */
     color: #FFFFFF; /* Couleur du texte */
     border: 1px solid #2e2e2e;
 }
 
 QWidget {
-    background-color: #2e2e32; /* Fond sombre */
+    background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
     font-family: "Go Noto Kurrent-Regular", "Noto Sans", sans-serif; /* Police de style GNOME */
     font-size: 12pt; /* 11.62pt Taille de police */
@@ -43,16 +43,16 @@ QPushButton:hover {
 /* Champ de saisie */
 
 QLineEdit {
-    background-color: #2e2e32; /* Fond sombre */
+    background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
-    border: 1px solid #666666; /* Bordure grise */
+    border: 1px solid #555555; /* Bordure grise */
     border-radius: 4px; /* Coins arrondis */
     padding: 5px; /* Rembourrage */
     line-height: 1.5; /* Hauteur de ligne (non supporté directement) */
 }
 
 QLineEdit[placeholderText] {
-   color: #2e2e32;
+   color: #222226;
 }
 
 
@@ -60,15 +60,15 @@ QLineEdit[placeholderText] {
 /* Combo Box */
 
 QComboBox {
-    background-color: #2e2e32; /* Fond sombre */
+    background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
-    border: 1px solid #666666; /* Bordure grise */
+    border: 1px solid #555555; /* Bordure grise */
     border-radius: 4px; /* Coins arrondis */
     height: 34px;
 }
 
 QComboBox::drop-down {
-    border: 0px solid #666666;
+    border: 0px solid #555555;
     border-radius: 4px;
 }
 
@@ -93,7 +93,7 @@ QComboBox::item:selected {
 
 QSpinBox {
   padding: 4px;
-  border: 1px solid #666666;
+  border: 1px solid #555555;
   border-radius: 4px;
   background: none;
 }
@@ -217,8 +217,8 @@ QTreeView::item {
 
 /* Table / Tree général */
 QTableView, QTreeView {
-    background-color: #2e2e32;
-    alternate-background-color: #2e2e32;
+    background-color: #222226;
+    alternate-background-color: #222226;
     selection-background-color: #3a3a3a; /* ajuster si besoin */
 }
 
@@ -226,7 +226,7 @@ QTableView, QTreeView {
 /* En-têtes */
 QHeaderView::section {
     padding: 4px;
-    background-color: #2e2e32;
+    background-color: #222226;
     border: 1px solid #404040; /* Bordure grise */
 }
 
@@ -247,7 +247,7 @@ QScrollBar {
 QScrollBar:hover {
     background: #40404050;
     border: none;
-    margin: 3px 3px 3px 3px;
+    margin: 3px;
     border-radius: 4px;
 }
 
@@ -263,8 +263,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 /* Handle - vertical */
 QScrollBar::handle:vertical {
     background: grey;
-    border-radius: 2px;    /* moitié de 4px pour arrondir */
-    min-height: 30px;
+    border-radius: 4px;
+    min-height: 40px;
     width: 4px;
     margin: 3px 2px 3px 3px;
 }
@@ -272,22 +272,22 @@ QScrollBar::handle:vertical {
 /* Handle - horizontal */
 QScrollBar::handle:horizontal {
     background: grey;
-    border-radius: 2px;
-    min-width: 30px;
+    border-radius: 4px;
+    min-width: 40px;
     height: 4px;
     margin: 3px 3px 2px 3px;
 }
 
 /* Hover */
 QScrollBar::handle:hover {
-    background: palette(highlight);
+    background: #0080ff;
     margin: 0px;
     border-radius: 4px;
 }
 
 /* Pressed */
 QScrollBar::handle:pressed {
-    background: palette(highlight);
+    background: #0080ff;
 }
 
 /* Disabled */
@@ -429,7 +429,7 @@ QTabBar::tab {
     border-bottom: 4px solid #404040; /* Couleur de surlignage */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #2e2e32;
+    background: #222226;
     padding: 7px 10px 5px 10px;
     margin: 0 2px;
 }
@@ -462,6 +462,6 @@ QTabBar QToolButton:disabled { /* état désactivé */
 
 /* Zone de contenu (pages) */
 QTabWidget::pane {
-    border: 1px solid #404040;
+    border: 1px solid #40404040;
     border-radius: 5px;
 }
