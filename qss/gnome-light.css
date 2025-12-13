@@ -20,18 +20,50 @@ QWidget {
 
 /* Boutons */
 
+/* Boutons */
 QPushButton {
-    background-color: #f6f5f4;
-    color: #000000;
-    padding: 7px 10px;
-    margin: 0 3px;
-    border-radius: 5px;
+    background-color: #464646; /* Fond des boutons */
+    color: #ffffff;            /* Texte des boutons */
+    padding: 10px 22px;       /* Rembourrage */
+    border-radius: 20px;      /* Coins arrondis */
+    border: none;
+    outline: none;
 }
 
-QPushButton:hover {
-    background-color: #deddda;
-    color: #000000;
+/* Survol */
+QPushButton:hover:!pressed {
+    background-color: palette(highlight); /* Fond bleu au survol */
+    /* optionnel : transition douce */
+    transition: background-color 120ms ease-in-out;
 }
+
+/* Appuyé / pressé */
+QPushButton:pressed {
+    /* assombrir légèrement quand on clique */
+    background-color: rgba(0,0,0,0.15);
+}
+
+/* Désactivé */
+QPushButton:disabled,
+QPushButton[enabled="false"] {
+    background-color: #6b6b6b; /* teinte plus claire/grisée */
+    color: #d6d6d6;            /* texte atténué */
+    opacity: 0.6;              /* atténuation visuelle */
+    cursor: default;           /* pas de pointeur */
+    pointer-events: none;      /* désactive les interactions */
+}
+
+/* Option : afficher un état désactivé plus explicite (bordure) */
+QPushButton:disabled {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Option : style pour QPushButton flat / transparent (si utilisé) */
+QPushButton[flat="true"] {
+    background-color: transparent;
+    color: #ffffff;
+}
+
 
 
 /* Champ de saisie */
