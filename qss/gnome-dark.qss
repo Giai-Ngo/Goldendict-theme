@@ -13,8 +13,7 @@ QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QScrollBar, QTabWidget {
 QWidget {
     background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
-    font-family: "Go Noto Kurrent-Regular", "Noto Sans", sans-serif; /* Police de style GNOME */
-    font-size: 12pt; /* 11.62pt Taille de police */
+
 }
 
 
@@ -26,16 +25,47 @@ QLabel {
 
 
 /* Boutons */
-
 QPushButton {
     background-color: #464646; /* Fond des boutons */
-    color: #ffffff; /* Texte des boutons */
-    padding: 8px 12px; /* Rembourrage */
-    border-radius: 10px; /* Coins arrondis */
+    color: #ffffff;            /* Texte des boutons */
+    padding: 10px 22px;       /* Rembourrage */
+    border-radius: 20px;      /* Coins arrondis */
+    border: none;
+    outline: none;
 }
 
-QPushButton:hover {
+/* Survol */
+QPushButton:hover:!pressed {
     background-color: palette(highlight); /* Fond bleu au survol */
+    /* optionnel : transition douce */
+    transition: background-color 120ms ease-in-out;
+}
+
+/* Appuyé / pressé */
+QPushButton:pressed {
+    /* assombrir légèrement quand on clique */
+    background-color: rgba(0,0,0,0.15);
+}
+
+/* Désactivé */
+QPushButton:disabled,
+QPushButton[enabled="false"] {
+    background-color: #6b6b6b; /* teinte plus claire/grisée */
+    color: #d6d6d6;            /* texte atténué */
+    opacity: 0.6;              /* atténuation visuelle */
+    cursor: default;           /* pas de pointeur */
+    pointer-events: none;      /* désactive les interactions */
+}
+
+/* Option : afficher un état désactivé plus explicite (bordure) */
+QPushButton:disabled {
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Option : style pour QPushButton flat / transparent (si utilisé) */
+QPushButton[flat="true"] {
+    background-color: transparent;
+    color: #ffffff;
 }
 
 
@@ -46,7 +76,7 @@ QLineEdit {
     background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
     border: 1px solid #555555; /* Bordure grise */
-    border-radius: 4px; /* Coins arrondis */
+    border-radius: 7px; /* Coins arrondis */
     padding: 5px; /* Rembourrage */
     line-height: 1.5; /* Hauteur de ligne (non supporté directement) */
 }
@@ -63,13 +93,13 @@ QComboBox {
     background-color: #222226; /* Fond sombre */
     color: #ffffff; /* Texte clair */
     border: 1px solid #555555; /* Bordure grise */
-    border-radius: 4px; /* Coins arrondis */
+    border-radius: 7px; /* Coins arrondis */
     height: 34px;
 }
 
 QComboBox::drop-down {
     border: 0px solid #555555;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 QComboBox::drop-down::icon {
@@ -82,7 +112,7 @@ QComboBox::drop-down::icon {
 QComboBox::item:selected {
     background-color: #0078d7; /* Blue background for selected item */
     color: white; /* White text for selected item */
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 
@@ -94,8 +124,8 @@ QComboBox::item:selected {
 QSpinBox {
   padding: 4px;
   border: 1px solid #555555;
-  border-radius: 4px;
-  background: none;
+  border-radius: 6px;
+  background-color: #222226; /* Fond sombre */
 }
 
 /* Pour supprimer le relief/pression visuelle */
@@ -134,7 +164,7 @@ QListView::item {
 
 QListView::item:selected {
     border: 0px solid #0078d7; /* Bordure grise */
-    border-radius: 4px; /* Coins arrondis */
+    border-radius: 12px; /* Coins arrondis */
     padding: 5px;  /*Rembourrage */
     background-color: palette(highlight); /* Blue background for selected item */
     color: white; /* White text for selected item */
@@ -227,7 +257,7 @@ QTableView, QTreeView {
 QHeaderView::section {
     padding: 4px;
     background-color: #222226;
-    border: 1px solid #404040; /* Bordure grise */
+    border: 1px solid #40404040; /* Bordure grise */
 }
 
 
@@ -262,7 +292,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 /* Handle - vertical */
 QScrollBar::handle:vertical {
-    background: grey;
+    background: #4a4a4d;
     border-radius: 4px;
     min-height: 40px;
     width: 4px;
@@ -271,7 +301,7 @@ QScrollBar::handle:vertical {
 
 /* Handle - horizontal */
 QScrollBar::handle:horizontal {
-    background: grey;
+    background: #4a4a4d;
     border-radius: 4px;
     min-width: 40px;
     height: 4px;
@@ -320,7 +350,7 @@ QProgressBar::chunk {
 
 QToolTip{
   background: transparent;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 2px;
   color: white;
 }
@@ -334,14 +364,14 @@ QMenu {
   background-color: #36363a;
   color: #e6e9ea;
   border: 1px solid rgba(255,255,255,0.04);
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 6px 4px;
-qproperty-dropShadow: 0px 16px 20px rgba(0,0,0,0.45);
+  qproperty-dropShadow: 0px 16px 20px rgba(0,0,0,0.45);
 }
 
 QMenu::item {
   padding: 4px 20px;
-  border-radius: 6px;
+  border-radius: 12px;
   color: #e6e9ea;
 }
 
@@ -426,9 +456,7 @@ QMenuBar::item:selected {
 QTabBar::tab {
     color: #e0e0e0; /* Couleur du texte des onglets non sélectionnés */
     border: none;
-    border-bottom: 4px solid #404040; /* Couleur de surlignage */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-bottom: 4px solid transparent; /* Couleur de surlignage */
     background: #222226;
     padding: 7px 10px 5px 10px;
     margin: 0 2px;
@@ -445,6 +473,8 @@ QTabBar::tab:hover {
     background-color: #3e3e3e;
     border-bottom: 4px solid #525252; /* Couleur de surlignage */
     padding: 7px 10px 5px 10px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 QTabBar QToolButton { /* Remplacer l'icône des boutons scroller du QTabBar */
@@ -462,6 +492,6 @@ QTabBar QToolButton:disabled { /* état désactivé */
 
 /* Zone de contenu (pages) */
 QTabWidget::pane {
-    border: 1px solid #40404040;
+    border: 0px solid #40404040;
     border-radius: 5px;
 }
