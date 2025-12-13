@@ -13,8 +13,6 @@ QMenu::item:disabled {
 QWidget {
     background-color: #ffffff; /* Fond clair */
     color: #000000; /* Texte foncé */
-    font-family: "Noto Sans", "Adwaita Sans", sans-serif;
-    font-size: 11.54pt;
 }
 
 
@@ -22,8 +20,8 @@ QWidget {
 
 /* Boutons */
 QPushButton {
-    background-color: #464646; /* Fond des boutons */
-    color: #ffffff;            /* Texte des boutons */
+    background-color: rgba(0,0,0,0.05); /* Fond des boutons */
+    color: #000000;            /* Texte des boutons */
     padding: 10px 22px;       /* Rembourrage */
     border-radius: 20px;      /* Coins arrondis */
     border: none;
@@ -34,6 +32,7 @@ QPushButton {
 QPushButton:hover:!pressed {
     background-color: palette(highlight); /* Fond bleu au survol */
     /* optionnel : transition douce */
+    color: #ffffff;            /* Texte des boutons */
     transition: background-color 120ms ease-in-out;
 }
 
@@ -136,66 +135,69 @@ QTreeView::item {
 }
 
 
-/* Barre de défilement */
+
+
+/* Barre de défilement - handle rond largeur 4px */
 
 QScrollBar {
     background: transparent;
+    border: none;
+    margin: 3px;
 }
 
-QScrollBar::add-line {
+QScrollBar:hover {
+    background: #40404050;
+    border: none;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+/* Suppression des boutons add/sub */
+QScrollBar::add-line, QScrollBar::sub-line {
     subcontrol-origin: none;
+    background: none;
+    width: 0;
+    height: 0;
 }
 
-QScrollBar::add-line:vertical,
-QScrollBar::sub-line:vertical {
-    height: 0px;
+
+/* Handle - vertical */
+QScrollBar::handle:vertical {
+    background: #4a4a4d;
+    border-radius: 4px;
+    min-height: 40px;
+    width: 4px;
+    margin: 3px 2px 3px 3px;
 }
 
-QScrollBar::add-line:horizontal,
-QScrollBar::sub-line:horizontal {
-    width: 0px;
-}
-
-QScrollBar::sub-line {
-    subcontrol-origin: none;
-}
-
-QScrollBar::handle {
-    background: #b0b0b0;
-    border-radius: 7px;
-    min-height: 30px;
-    margin: 0 5px 0 4px;
-}
-
+/* Handle - horizontal */
 QScrollBar::handle:horizontal {
-    background: #b0b0b0;
-    border-radius: 7px;
-    min-width: 30px;
-    margin: 5px 0 4px 0;
+    background: #4a4a4d;
+    border-radius: 4px;
+    min-width: 40px;
+    height: 4px;
+    margin: 3px 3px 2px 3px;
 }
 
-QScrollBar::handle:hover,
-QScrollBar::add-line:hover,
-QScrollBar::sub-line:hover {
-    background: #1c71d8;
-    margin: 0 3px 0 2px;
-border-radius: 7px;
+/* Hover */
+QScrollBar::handle:hover {
+    background: #0080ff;
+    margin: 0px;
+    border-radius: 4px;
 }
 
-QScrollBar::handle:horizontal:hover,
-QScrollBar::add-line:horizontal:hover,
-QScrollBar::sub-line:horizontal:hover {
-    background: #1c71d8;
-    margin: 3px 0 2px 0;
+/* Pressed */
+QScrollBar::handle:pressed {
+    background: #0080ff;
 }
 
-QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
-    background: none;
+/* Disabled */
+QScrollBar:vertical:disabled, QScrollBar:horizontal:disabled {
+    background: transparent;
 }
 
-QScrollBar:vertical:disabled {
-    background: none;
-}
+
+
 
 
 /* Cacher la barre de défilement si non nécessaire */
