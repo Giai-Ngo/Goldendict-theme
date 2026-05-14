@@ -1,7 +1,7 @@
 /* ========================================== */
-/*     This file is encoded UTF-8     */
-/*   based on Display style: Babylone   */
-/*         ~ giải ngố         */
+/*     This file is encoded UTF-8             */
+/*   based on Display style: Babylone         */
+/*         ~ giải ngố                         */
 /* ========================================== */
 
 
@@ -10,8 +10,8 @@
  */
  
 * {
-	font-family: "Han-Nom Gothic", sans-serif !important;
-	line-height: 150% !important;
+	font-family: "Noto Sans", "Han-Nom Gothic", sans-serif !important;
+	line-height: 190% !important;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -22,7 +22,7 @@ html{
 
 body, tbody, div {	/* texte */
 	/*text-align: justify;*/
-	font-size: 21px !important;
+	font-size: 18.5px !important;
 	background: #2e2e32 !important;
   color: #ffffff !important;
 }
@@ -33,18 +33,19 @@ body, tbody, div {	/* texte */
  */
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
-	padding: .3em;
+	padding: .5em;
   background: #2e2e32 !important;
+/*  padding-bottom: 1em;*/
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px solid #555555;
+	border: 1px solid #55555555;
 	border-radius: 35px 7px 50px 7px;
 	background : #3f4446 !important;
 	color: white !important;
 	font-size: 1em; /* texte */
-	font-weight:  bold;
-	padding: .5em;
+	font-weight: bold;
+	padding: .4em;
 	margin: 1em 0; /* outline */
 }
 
@@ -53,16 +54,17 @@ body, tbody, div {	/* texte */
 	background : none !important;
 }
 
+
 .gdcollapseicon, .gdexpandicon {
-	padding: 9px !important;
-	height: 12px;
-	width: 12px;
+	padding: 10px !important;
+	height: 10px;
+	width: 10px;
 }
 
 .gdcollapseicon:hover, .gdexpandicon:hover {
-	padding: 9px !important;
-	height: 12px;
-	width: 12px;
+	padding: 10px !important;
+	height: 10px;
+	width: 10px;
 }
 
 .gddicticon img {
@@ -488,15 +490,29 @@ font[color="blue"] {
 }
 
 .mwiki h2 {
-  border-bottom: 1px solid rgba(170, 170, 170, 0.4);
+  border-bottom: 1px solid rgba(170, 170, 170, 0.04);
 }
 
 .mwiki div.NavFrame {
   border: 1px solid rgba(170, 170, 170, 0.4);
 }
 
+.mwiki code {
+  background-color: transparent;
+}
+
+.mwiki .infobox caption {
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
 p.bloc, caption {
-  background-color: gray !important;
+  background-color: #333333 !important;
+  border-radius: 5px;
+}
+
+div.infobox_v3.infobox.infobox--frwiki.noarchive.large.taxobox_v3.zoologie.animal.bordered {
+  border-radius: 20px;
 }
 
 figure {
@@ -506,6 +522,10 @@ figure {
 figcaption {
   font-size: .9em !important;
   font-style: italic !important;
+}
+
+.mwiki img {
+  border-radius: 20px;
 }
 
 div#toc.toc {
@@ -650,12 +670,13 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: gray;
+  background: #a4a4a3;
   border-left: 7px solid #2e2e32;
   border-right: 1px solid #2e2e32;
   border-top: 2px solid #2e2e32;
   border-bottom: 2px solid #2e2e32;
-  min-height: 40px;
+  min-height: 50px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
@@ -676,15 +697,16 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
   overflow: auto
 	-webkit-overflow-scrolling: touch;
 	padding-right: 10px;
+	border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background: gray;
+  background: #a4a4a3;
   border-top: 7px solid #2e2e32;
   border-bottom: 1px solid #2e2e32;
   border-left: 2px solid #2e2e32;
   border-right: 2px solid #2e2e32;
-  min-width: 40px;
+  min-width: 50px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal:hover {
