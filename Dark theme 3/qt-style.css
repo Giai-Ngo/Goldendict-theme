@@ -7,15 +7,19 @@
  
 * {
   line-height: 170% !important;
+  font-family: "Noto Sans", sans-serif; /* Police de style GNOME */
+  font-size: 12pt; /* 11.62pt Taille de police */
 }
 
 MainWindow #searchPane #translateLine, MainWindow #searchPane #wordList, MainWindow #dictionariesList, MainWindow #translateLine, ScanPopup #translateLine, MainWindow #wordList, MainWindow #dictsPane #dictsList, MainWindow #historyPane #historyList, MainWindow #favoritesPane #favoritesTree {
-	background: #222226 !important;
+	background: #2e2e32 !important;
 	color: #ffffff !important;
+	border: 1px solid #55555555 !important;
+	border-radius: 4px;
 }
 
 MainWindow {
-	background: #222226 !important;
+	background: #2e2e32 !important;
 	color: #ffffff !important;
 }
 
@@ -24,4 +28,6 @@ MainWindow #menubar::item:pressed {
   padding-bottom: -3px;
   color: #3992cd;
 }
+
+
 
