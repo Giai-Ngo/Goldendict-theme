@@ -54,17 +54,10 @@ body, tbody, div {	/* texte */
 	background : none !important;
 }
 
-
-.gdcollapseicon, .gdexpandicon {
-	padding: 10px !important;
-	height: 10px;
-	width: 10px;
-}
-
-.gdcollapseicon:hover, .gdexpandicon:hover {
-	padding: 10px !important;
-	height: 10px;
-	width: 10px;
+.gdcollapseicon, .gdexpandicon, .gdcollapseicon:hover, .gdexpandicon:hover {
+    width: .8rem !important;
+    height: .8rem !important;
+    padding: .5em !important;
 }
 
 .gddicticon img {
