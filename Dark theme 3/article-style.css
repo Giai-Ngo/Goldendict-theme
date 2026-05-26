@@ -40,12 +40,12 @@ body, tbody, div {	/* texte */
 
 .gddicttitle {
 	flex: 1;
-	padding: 9px !important;
+	padding: 5px !important;
 	background: none !important;
 }
 
 .gddicticon {
-	padding: 9px !important;
+	padding: 5px !important;
 	background: none !important;
 }
 
