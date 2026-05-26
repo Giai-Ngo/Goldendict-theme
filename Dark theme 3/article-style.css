@@ -32,10 +32,21 @@ body, tbody, div {	/* texte */
  * Each acticle
  */
 
+
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .5em;
   background: #2e2e32 !important;
-/*  padding-bottom: 1em;*/
+}
+
+.gddicttitle {
+	flex: 1;
+	padding: 9px !important;
+	background: none !important;
+}
+
+.gddicticon {
+	padding: 9px !important;
+	background: none !important;
 }
 
 .gddictname /* name of each dictionary */ { 
@@ -45,20 +56,20 @@ body, tbody, div {	/* texte */
 	color: white !important;
 	font-size: 1em; /* texte */
 	font-weight: bold;
-	padding: .4em;
+	padding: 5px 12px;
 	margin: 1em 0; /* outline */
-}
-
-.gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
-	padding: 9px !important;
-	background : none !important;
+	display: flex;
+	align-items: center;
 }
 
 .gdcollapseicon, .gdexpandicon, .gdcollapseicon:hover, .gdexpandicon:hover {
-    width: .8rem !important;
-    height: .8rem !important;
-    padding: .5em !important;
+	padding: 5px !important;
+	height: 15px;
+	width: auto;
+	margin-left: auto;
+	margin-right: 5px;
 }
+
 
 .gddicticon img {
 	vertical-align: middle;
