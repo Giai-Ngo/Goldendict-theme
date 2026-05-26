@@ -35,36 +35,40 @@ body {
  */
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
-	padding: .3em;
-	background-color: white !important;
+	padding: .5em;
+  background: white !important;
+}
+
+.gddicttitle {
+	flex: 1;
+	padding: 5px !important;
+	background: none !important;
+}
+
+.gddicticon {
+	padding: 5px !important;
+	background: none !important;
 }
 
 .gddictname /* name of each dictionary */ { 
 	border: 1px solid #deddda;
-	border-radius: 50px 7px;
-	background : #f6f5f4 !important;
+	border-radius: 35px 7px 50px 7px;
+	background : white !important;
 	color: black !important;
 	font-size: 1em; /* texte */
-	font-weight:  bold;
-	padding: .5em;
+	font-weight: bold;
+	padding: 5px 12px;
 	margin: 1em 0; /* outline */
+	display: flex;
+	align-items: center;
 }
 
-.gddicttitle, .gddicticon { /* dictionary icon and collapse + expand */
-	padding: 7px !important;
-	background : none !important;
-}
-
-.gdcollapseicon, .gdexpandicon {
-	padding: 7px !important;
-	height: 12px;
-	width: 12px;
-}
-
-.gdcollapseicon:hover, .gdexpandicon:hover {
-	padding: 7px !important;
-	height: 12px;
-	width: 12px;
+.gdcollapseicon, .gdexpandicon, .gdcollapseicon:hover, .gdexpandicon:hover {
+	padding: 5px !important;
+	height: 15px;
+	width: auto;
+	margin-left: auto;
+	margin-right: 5px;
 }
 
 
