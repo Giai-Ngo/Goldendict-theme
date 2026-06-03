@@ -64,11 +64,12 @@ body, tbody, div {	/* texte */
 
 .gdcollapseicon, .gdexpandicon, .gdcollapseicon:hover, .gdexpandicon:hover {
 	padding: 5px !important;
-	height: 15px;
+	height: 12px;
 	width: auto;
 	margin-left: auto;
 	margin-right: 5px;
 }
+
 
 
 .gddicticon img {
@@ -104,6 +105,14 @@ header, div.ads-col, form#LookupForm.main-form, footer.small, div.info, div.hvre
 
 section, div#mw-related-navigation {
   margin: 0 !important;
+}
+
+.website-iframe {
+    border-radius: 12px;
+}
+
+.ads-col {
+    display: none !important;
 }
 
 /*Wiki Grec ancien*/
@@ -145,6 +154,11 @@ sn-gs,
 
 .mdict font[color="darkred"] {
 	color: goldenrod !important;
+}
+
+.mdict font[color="darkred"]::before {
+    content: "";
+    display: block;
 }
 
 .mdict font[color="#225577"] {
@@ -201,10 +215,15 @@ div.cB, div.cB-e, div.dcCorpEx {
   border: none;
 /*  border: 1px rgba(255, 255, 255, 0.13) dotted !important; */
   padding: 15px !important;
+  border-radius: 12px;
 }
 
 div.cB.cB-e {
   border: 1px solid #696666 !important;
+}
+
+#Smith1854 table, th, td{
+  border: 0px solid black;
 }
 
 span[color="navy"] {
@@ -246,6 +265,13 @@ a.link-right.verbtable {
     background-color: unset !important;
 }
 
+.d_dvr:before {
+  padding-right: 1em;
+}
+
+.d_dvr .d_dvn {
+  padding: 10px !important;
+}
 
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
@@ -257,6 +283,24 @@ a.link-right.verbtable {
 	color: #fefefe !important;
 	font-weight: normal !important;
 }
+
+/* Cache tous les <br> consécutifs après le premier */
+
+br {
+    display: block;
+    content: "";
+    margin-bottom: 12px;
+}
+
+br + br {
+    display: none;
+}
+
+br:has(+ span) {
+    display: none;
+}
+
+
 
 font[color="black"] {
 	color: white !important;
@@ -295,8 +339,15 @@ font[color="Teal"] {
 	color: lightskyblue !important;
 }
 
+.sdct_x [style="color:red"] {
+	margin-left: 1.5em;
+}
+
 .sdct_x [style="color:navy"] {
 	color: olive !important;
+	margin-left: 3em;
+	padding-right: 5px;
+	font-style: italic;
 }
 
 .sdct_x [style="color:tomato"] {
@@ -305,6 +356,10 @@ font[color="Teal"] {
 
 .sdct_x [style="color:blue"] {
 	color: orchid !important;
+}
+
+span font[size], blockquote font[size] {
+    font-size: 1em !important;
 }
 
 
@@ -475,6 +530,21 @@ font[color="blue"] {
  color: lightblue !important;
 }
 
+.dsl_m1 {
+    padding-left: 8px;
+    padding-bottom: .7em;
+    text-indent: 2em;
+}
+
+.dsl_m2 {
+    padding-left: 18px;
+    padding-bottom: .7em;
+    text-indent: 4em;
+}
+
+.dsl_m1 font[color="red"]{
+    padding-left: 28px;
+}
 
 
 /**
@@ -564,6 +634,23 @@ h2 {
   color: white !important;
 }
 
+.mwiki div.NavFrame {
+    border-radius: 12px;
+    margin-bottom: 7px;
+}
+
+.mwiki div.NavFrame div.NavHead {
+    border-radius: 9px;
+    height: auto;
+}
+
+.mwiki .wikitable th, .mwiki .wikitable td, .mwiki .prettytable th, .mwiki .prettytable td {
+    padding: .2em .5em;
+}
+
+.mwiki div.thumbinner {
+    border-radius: 12px;
+}
 
 /**
  * .bgl
@@ -610,10 +697,8 @@ p[align="center"]{
 }
 
 fieldset {
-  border-top-width: 1px;
-  border-right-width: 1px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
+  border-width: 1px;
+  border-radius: 12px;
 }
 
 
