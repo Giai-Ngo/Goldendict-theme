@@ -93,6 +93,10 @@ h3 {
 }
 
 
+img, video, iframe, embed, object {
+    border-radius: 12px;
+}
+
 
 /*Từ điển Hán Nôm*/
 header, div.ads-col, form#LookupForm.main-form, footer.small, div.info, div.hvres-nav-dock {
@@ -433,6 +437,14 @@ font[color="blue"] {
 	color: lightgray !important;
 }
 
+.dsl_m1 font[color="purple"]{
+	color: #9C27B0 !important;
+}
+
+.dsl_m1 font[color="red"]{
+    padding-left: 28px;
+}
+
 .dsl_m2 font[color="darkviolet"] {
 	color: violet !important;
 }
@@ -503,7 +515,7 @@ font[color="blue"] {
 }
 
 .dsl_b font[color="darkslategray"]{
-	color: #586e75 !important;
+	color: #97bf60 !important;
 }
 
 .dsl_b font[color="dimgray"] {
@@ -532,7 +544,7 @@ font[color="blue"] {
 
 .dsl_m1 {
     padding-left: 8px;
-    padding-bottom: .7em;
+    padding-bottom: .1em;
     text-indent: 2em;
 }
 
@@ -540,10 +552,6 @@ font[color="blue"] {
     padding-left: 18px;
     padding-bottom: .7em;
     text-indent: 4em;
-}
-
-.dsl_m1 font[color="red"]{
-    padding-left: 28px;
 }
 
 
@@ -575,9 +583,28 @@ font[color="blue"] {
   background-color: transparent;
 }
 
+.bandeau-container.metadata.bandeau-article.bandeau-niveau-modere, .bandeau-container.metadata.bandeau-article.bandeau-niveau-ebauche, .plainlinks.bandeau-niveau-ebauche.bandeau {
+  display: none;
+}
+
+.mwiki .infobox {
+  display: table;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .mwiki .infobox caption {
   border-radius: 10px;
   margin-top: 5px;
+}
+
+.bandeau-container.bandeau-section.metadata.bandeau-niveau-information {
+  display: inline-flex;
+  margin: 7px;
+}
+
+p.navbar.bordered.noprint {
+  display: none;
 }
 
 p.bloc, caption {
@@ -596,10 +623,6 @@ figure {
 figcaption {
   font-size: .9em !important;
   font-style: italic !important;
-}
-
-.mwiki img {
-  border-radius: 20px;
 }
 
 div#toc.toc {
@@ -651,6 +674,54 @@ h2 {
 .mwiki div.thumbinner {
     border-radius: 12px;
 }
+
+li.gallerybox {
+    display: inline-table;
+}
+
+
+
+
+.mwiki ol.references {
+  max-height: 120px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 40px;
+  margin-right: 10em;
+  transition: max-height 1s ease;
+  font-size: .9em;
+}
+
+.mwiki ol.references:hover {
+  max-height: 9999px;
+}
+
+.mwiki ol.references::before {
+  content: "▼ Afficher les références";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 4px 0;
+  font-weight: 600;
+  background: inherit;
+  cursor: pointer;
+}
+
+.mwiki ol.references:hover::before {
+  content: "▲ Masquer les références";
+}
+
+body:not(.mw-mf) .mw-parser-output .reference-cadre {
+    height: auto !important;
+    border: none !important;
+}
+
+
+ul#bandeau-portail, .noprint.boite-grise.boite-a-droite {
+    display: none;
+}
+
 
 /**
  * .bgl
