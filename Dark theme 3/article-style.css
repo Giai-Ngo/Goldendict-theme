@@ -277,6 +277,10 @@ a.link-right.verbtable {
   padding: 10px !important;
 }
 
+img.soundpng {
+    vertical-align: middle;
+}
+
 /**
  * dxdf Dictionary : .dict.dz, .idx, .ifo (Stardict)
  */
@@ -591,6 +595,8 @@ font[color="blue"] {
   display: table;
   border-radius: 10px;
   padding: 10px;
+  max-width: 50%;
+  float: right;
 }
 
 .mwiki .infobox caption {
@@ -598,9 +604,28 @@ font[color="blue"] {
   margin-top: 5px;
 }
 
+.side-box.side-box-right.plainlinks.sistersitebox, div#disambigbox, ul.noprint.portalbox.portalborder.portalright, div#setindexbox, .interproject-box.sister-wikipedia.sister-project.noprint.floatright, .side-box.side-box-right.plainlinks.selfreference {
+  display: none;
+}
+
+.navbox {
+    display: none;
+}
+
+
+img.mw-file-element.mw-file-upright {
+  display: block;
+  margin: 0 auto;
+}
+
 .bandeau-container.bandeau-section.metadata.bandeau-niveau-information {
   display: inline-flex;
   margin: 7px;
+}
+
+.bandeau-cell {
+    display: inline;
+    padding-right: 15px;
 }
 
 p.navbar.bordered.noprint {
@@ -630,11 +655,15 @@ div#toc.toc {
 }
 
 div.NavHead {
-	background-color: #3A3E40 !important;
+	background-color: #3A3E4050 !important;
 }
 
 th, tr, td {
 	background-color: #2e2e32 !important;
+}
+
+th.invisible {
+    display: none;
 }
 
 div.thumbcaption {
@@ -677,6 +706,17 @@ h2 {
 
 li.gallerybox {
     display: inline-table;
+}
+
+ul.center.gallery.mw-gallery-traditional {
+    display: inline-flex;
+    margin-top: 1em;
+}
+
+.mwiki *.center * {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
