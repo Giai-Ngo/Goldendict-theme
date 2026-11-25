@@ -50,9 +50,9 @@ body, tbody, div {	/* texte */
 }
 
 .gddictname /* name of each dictionary */ { 
-	border: 1px solid #55555555;
+	border: 1px solid #454545;
 	border-radius: 35px 7px 50px 7px;
-	background : #3f4446 !important;
+	background : #454545 !important;
 	color: white !important;
 	font-size: 1em; /* texte */
 	font-weight: bold;
@@ -87,10 +87,11 @@ a:visited {
 ul, span {
 	color: white !important;
 }
+/*
+strong {
+    font-family: Junicode !important;
+}*/
 
-h3 {
-	color: goldenrod !important;
-}
 
 
 img, video, iframe, embed, object {
@@ -349,6 +350,11 @@ font[color="Teal"] {
 
 .sdct_x [style="color:red"] {
 	margin-left: 1.5em;
+	color: tomato !important;
+}
+
+.sdct_x [style="color:gray"] {
+	color: gray !important;
 }
 
 .sdct_x [style="color:navy"] {
@@ -562,6 +568,10 @@ font[color="blue"] {
 /**
  * Wiki
  */
+ 
+ .gderrordesc {
+  padding-left: 42px !important;
+}
 
 .mwiki div.thumb {
 	border-color: #2e2e32 !important;
@@ -569,6 +579,18 @@ font[color="blue"] {
 
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
 	background-color: #2e2e32 !important;
+}
+
+.mwiki table {
+	width: 100%;
+}
+
+.mwiki table.wikitable, .mwiki table.prettytable {
+  width: auto;
+}
+
+.mwiki .wikitable th, .mwiki .wikitable td, .mwiki .prettytable th, .mwiki .prettytable td {
+    border: 1px #f2f2f255 solid;
 }
 
 .mwiki h1, .mwiki h2, .mwiki h3, .mwiki h4, .mwiki h5, .mwiki h6, th.navbox-group {
@@ -579,12 +601,21 @@ font[color="blue"] {
   border-bottom: 1px solid rgba(170, 170, 170, 0.04);
 }
 
+.mwiki h1, .mwiki h2, .mwiki h3, .mwiki h4, .mwiki h5, .mwiki h6,
+.mwiki h1 *, .mwiki h2 *, .mwiki h3 *, .mwiki h4 *, .mwiki h5 *, .mwiki h6 * {
+  unicode-bidi: plaintext;
+  font-family: "Junicode", serif !important;
+}
+
 .mwiki div.NavFrame {
   border: 1px solid rgba(170, 170, 170, 0.4);
 }
 
-.mwiki code {
+.mwiki code, .mwiki pre {
   background-color: transparent;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-family: Adwaita Mono !important;
 }
 
 .bandeau-container.metadata.bandeau-article.bandeau-niveau-modere, .bandeau-container.metadata.bandeau-article.bandeau-niveau-ebauche, .plainlinks.bandeau-niveau-ebauche.bandeau {
@@ -595,6 +626,7 @@ font[color="blue"] {
   display: table;
   border-radius: 10px;
   padding: 10px;
+  margin: 20px;
   max-width: 50%;
   float: right;
 }
@@ -602,6 +634,7 @@ font[color="blue"] {
 .mwiki .infobox caption {
   border-radius: 10px;
   margin-top: 5px;
+  font-family: Junicode !important;
 }
 
 .side-box.side-box-right.plainlinks.sistersitebox, div#disambigbox, ul.noprint.portalbox.portalborder.portalright, div#setindexbox, .interproject-box.sister-wikipedia.sister-project.noprint.floatright, .side-box.side-box-right.plainlinks.selfreference {
@@ -711,6 +744,10 @@ li.gallerybox {
 ul.center.gallery.mw-gallery-traditional {
     display: inline-flex;
     margin-top: 1em;
+}
+
+.mwiki ul{
+  list-style-type: revert-layer;
 }
 
 .mwiki *.center * {
@@ -870,17 +907,18 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background: #a4a4a3;
-  border-left: 7px solid #2e2e32;
-  border-right: 1px solid #2e2e32;
+  background: #a4a4a355;
+  border-left: 4px solid #2e2e32;
+  border-right: 4px solid #2e2e32;
   border-top: 2px solid #2e2e32;
   border-bottom: 2px solid #2e2e32;
+  margin-right: 4px;
   min-height: 50px;
   border-radius: 0px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
-  background: #0080ff;
+  background: #cbcbca;
   border: 2px solid #2e2e32;
   border-radius: 19px;
 }
@@ -901,11 +939,12 @@ table, #definition_T_id, #mh_n_T_id, #mh_T_id, #C_C {
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background: #a4a4a3;
-  border-top: 7px solid #2e2e32;
-  border-bottom: 1px solid #2e2e32;
+  background: #a4a4a355;
+  border-top: 4px solid #2e2e32;
+  border-bottom: 4px solid #2e2e32;
   border-left: 2px solid #2e2e32;
   border-right: 2px solid #2e2e32;
+  margin-bottom: 4px;
   min-width: 50px;
 }
 
