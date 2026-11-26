@@ -332,6 +332,51 @@ QSpinBox::down-button:hover {
     background-color: #454545;
 }
 
+
+
+/* SpinBox horizontal - impression */
+QAbstractSpinBox {
+    background-color: #303030;
+    color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    min-height: 29px;
+    padding: 3px 6px;
+}
+
+QAbstractSpinBox:focus {
+    border: 1px solid #3584E4;
+}
+
+QAbstractSpinBox::up-button,
+QAbstractSpinBox::down-button {
+    background-color: transparent;
+    border: none;
+    width: 20px;
+}
+
+QAbstractSpinBox::up-button:hover,
+QAbstractSpinBox::down-button:hover {
+    background-color: transparent;
+}
+
+QAbstractSpinBox::up-arrow {
+    image: none;
+    width: 3px;
+    height: 3px;
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+}
+
+QAbstractSpinBox::down-arrow {
+    image: none;
+    width: 3px;
+    height: 3px;
+    border-right: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+}
+
+
 /* Liste */
 QListView {
     background-color: #242424;
@@ -392,6 +437,8 @@ QCheckBox::indicator:disabled {
     border-color: #454545;
 }
 
+
+
 /* Bouton radio */
 QRadioButton {
     spacing: 8px;
@@ -425,6 +472,61 @@ QRadioButton::indicator:checked {
 QRadioButton:disabled {
     color: #777777;
 }
+
+
+/* Boutons dans les dialogues */
+QDialog QPushButton,
+QDialog QToolButton {
+    background-color: #383838;
+    color: #FFFFFF;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    padding: 4px 8px;
+    min-height: 25px;
+}
+
+QDialog QPushButton:hover,
+QDialog QToolButton:hover {
+    background-color: #454545;
+    border-color: #3584E4;
+}
+
+QDialog QPushButton:pressed,
+QDialog QToolButton:pressed {
+    background-color: #3584E4;
+}
+
+QDialog QPushButton:focus,
+QDialog QToolButton:focus {
+    border: 1px solid #3584E4;
+}
+
+
+/* Aperçu avant impression : boutons sans bordure */
+
+QPrintPreviewDialog QToolButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QPrintPreviewDialog QToolButton:hover {
+    background-color: #454545;
+    border: none;
+}
+
+QPrintPreviewDialog QToolButton:pressed {
+    background-color: #3584E4;
+    border: none;
+}
+
+QPrintPreviewDialog QToolButton:focus {
+    border: none;
+    outline: none;
+}
+
+
 
 /* Tableau et Tree */
 QHeaderView::section {
