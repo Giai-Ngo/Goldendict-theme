@@ -15,7 +15,7 @@
 }
 
 html{
-	background: #fdf6e3 !important;
+	background: #ffffff !important;
 	color: #586e75 !important;
 }
 
@@ -25,7 +25,7 @@ body {
 	font-size: 17.4px !important;
 	line-height: 170% !important;
 	
-	background: #fdf6e3 !important;
+	background: #ffffff !important;
 	color: #586e75 !important;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .gdarticle, .gdactivearticle /* active ou selected dictionnary */ { 
 	padding: .5em;
-  background: #fdf6e3 !important;
+  background: #ffffff !important;
 }
 
 .gddicttitle {
@@ -66,7 +66,7 @@ body {
 
 .gdcollapseicon, .gdexpandicon, .gdcollapseicon:hover, .gdexpandicon:hover {
 	padding: 5px !important;
-	height: 15px;
+	height: 12px;
 	width: auto;
 	margin-left: auto;
 	margin-right: 5px;
@@ -79,7 +79,7 @@ body {
 
 ::selection, code::selection /* selected text */{ 
 	background: #4f94d5;
-	color: #fdf6e3;
+	color: #ffffff;
 }
 
 a:link {
@@ -114,11 +114,11 @@ ul {
  */
 
 .mwiki div.thumb {
-	border-color: #fdf6e3 !important;
+	border-color: #ffffff !important;
 }
 
 .mwiki #toc, .mwiki .toc, .mwiki .mw-warning, .mwiki table, .translations-cell {
-	background-color: #fdf6e3 !important;
+	background-color: #ffffff !important;
 }
 
 div#toc.toc {
@@ -350,7 +350,7 @@ table,
 
 .xdxf_dtrn {
 	font-weight: normal !important;
-	background: #fdf6e3;
+	background: #ffffff;
 	color: #586e75;
 }
 
@@ -369,7 +369,7 @@ table,
  **/
 
 ::-webkit-scrollbar {
-  background-color: #fdf6e3;
+  background-color: #ffffff;
   width: 11px;
   overflow: auto
 	-webkit-overflow-scrolling: touch;
@@ -378,21 +378,20 @@ table,
 
 ::-webkit-scrollbar-thumb:vertical {
   background: #363636;
-  border-left: 6px solid #fdf6e3;
-  border-right: 1px solid #fdf6e3;
-  border-top: 2px solid #fdf6e3;
-  border-bottom: 2px solid #fdf6e3;
+  border-left: 6px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   border-radius: 20px 11px 11px 20px;
   min-height: 30px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:hover {
   background: #363636;
-  border: 2px solid #fdf6e3;
+  border: 2px solid #ffffff;
   border-radius: 19px;
 }
 
 ::-webkit-scrollbar-thumb:vertical:active {
   background: #0080ff;
 }
-
