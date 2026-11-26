@@ -70,8 +70,6 @@ MainWindow #menubar::item:pressed {
 }
 
 
-
-
 /* Général */
 
 QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QTabWidget {
@@ -79,6 +77,7 @@ QMenuBar, QMenu, QToolBar, QStatusBar, QFrame, QTabWidget {
     color: #FFFFFF; /* Couleur du texte */
     border: 0px solid #2e2e2e;
 }
+
 
 /* Fond général des fenêtres */
 QMainWindow,
@@ -89,8 +88,7 @@ QWidget {
 }
 
 
-
-/* Scrollbar verticale */
+/* Scrollbar */
 QScrollBar:vertical {
     background-color: #2e2e32;
     width: 7px;
@@ -98,7 +96,6 @@ QScrollBar:vertical {
     border: none;
 }
 
-/* Scrollbar horizontale */
 QScrollBar:horizontal {
     background-color: #2e2e32;
     height: 7px;
@@ -106,7 +103,6 @@ QScrollBar:horizontal {
     border: none;
 }
 
-/* Poignée */
 QScrollBar::handle:vertical,
 QScrollBar::handle:horizontal {
     background-color: #565657;
@@ -117,14 +113,12 @@ QScrollBar::handle:horizontal {
     min-width: 40px;
 }
 
-/* Survol */
 QScrollBar::handle:hover {
     background-color: #cbcbca;
     border: 0px solid transparent;
     border-radius: 3px;
 }
 
-/* Pression */
 QScrollBar::handle:pressed {
     background-color: #3584e4;
     border: 0px solid transparent;
@@ -159,6 +153,7 @@ QLabel {
     color: #FFFFFF;
 }
 
+
 /* Boutons */
 QPushButton {
     background-color: #383838;
@@ -182,6 +177,21 @@ QPushButton:disabled {
     background-color: #303030;
 }
 
+/* Bouton par défaut - accent GTK4 */
+QPushButton:default {
+    border: 2px solid #3584E4;
+    border-radius: 8px;
+}
+
+QPushButton:default:hover {
+    border-color: #62A0EA;
+}
+
+QPushButton:default:pressed {
+    border-color: #1C71D8;
+}
+
+
 /* Champ de saisie */
 QLineEdit {
     background-color: #303030;
@@ -201,6 +211,7 @@ QLineEdit:disabled {
     color: #777777;
     background-color: #242424;
 }
+
 
 /* ComboBox */
 QComboBox {
@@ -235,6 +246,7 @@ QComboBox::down-arrow {
     border-bottom: 1px solid #a0a0a0;
 }
 
+
 /* Menu déroulant arrondi */
 QComboBox QAbstractItemView {
     background-color: #303030;
@@ -256,6 +268,7 @@ QComboBox::item:selected {
     background-color: #3584E4;
     color: #FFFFFF;
 }
+
 
 /* SpinBox */
 QSpinBox {
@@ -284,6 +297,7 @@ QSpinBox::up-button:pressed,
 QSpinBox::down-button:pressed {
     background: #454545;
 }
+
 
 /* SpinBox */
 QSpinBox {
@@ -331,7 +345,6 @@ QSpinBox::up-button:hover,
 QSpinBox::down-button:hover {
     background-color: #454545;
 }
-
 
 
 /* SpinBox horizontal - impression */
@@ -406,6 +419,7 @@ QListView::item:selected {
     padding: 5px;
 }
 
+
 /* CheckBox */
 QCheckBox {
     spacing: 7px;
@@ -436,7 +450,6 @@ QCheckBox::indicator:disabled {
     background-color: #303030;
     border-color: #454545;
 }
-
 
 
 /* Bouton radio */
@@ -503,7 +516,6 @@ QDialog QToolButton:focus {
 
 
 /* Aperçu avant impression : boutons sans bordure */
-
 QPrintPreviewDialog QToolButton {
     background-color: transparent;
     border: none;
@@ -525,7 +537,6 @@ QPrintPreviewDialog QToolButton:focus {
     border: none;
     outline: none;
 }
-
 
 
 /* Tableau et Tree */
@@ -560,6 +571,7 @@ QTreeView {
     selection-color: #FFFFFF;
 }
 
+
 /* ProgressBar */
 QProgressBar {
     background-color: #303030;
@@ -574,6 +586,7 @@ QProgressBar::chunk {
     border-radius: 5px;
 }
 
+
 /* ToolTip */
 QToolTip {
     background-color: #383838;
@@ -582,6 +595,7 @@ QToolTip {
     padding: 4px;
     color: #FFFFFF;
 }
+
 
 /* Menu */
 QMenu {
@@ -657,6 +671,7 @@ QMenuBar::item:selected {
 QMenuBar::item:pressed {
     background-color: #454545;
 }
+
 
 /* TabBar */
 QTabBar::tab {
