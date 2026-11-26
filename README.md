@@ -2,6 +2,7 @@
 
 Attribution-NonCommercial 2.0 Generic ([CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)) 
 
+
 # Goldendict theme
 
 To install the default theme in Linux, you can follow one of these two methods:
@@ -15,18 +16,18 @@ To install the default theme in Linux, you can follow one of these two methods:
 
 ![](Screenshot/Default.png)
 
-## Light theme
-
 ![](Screenshot/Light.png)
+
+![](Screenshot/Settings.png)
+
 
 ## Dark theme
 
-![](Screenshot/Dark.png)
-
 ![](Screenshot/Bienvenue.png)
+
+![](Screenshot/Dark.png)
 
 ![](Screenshot/Préférences.png)
 
-![](Screenshot/Settings.png)
 
 
