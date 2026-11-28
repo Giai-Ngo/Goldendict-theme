@@ -154,42 +154,102 @@ QLabel {
 }
 
 
-/* Boutons */
+
+/* Boutons standards */
 QPushButton {
-    background-color: #383838;
-    color: #FFFFFF;
-    padding: 8px 12px;
-    border: 1px solid #555555;
-    border-radius: 8px;
+    background-color: #3A3A3A;
+    color: #F6F5F4;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 12px;
+    font-weight: 600;
 }
 
 QPushButton:hover {
     background-color: #454545;
-    border-color: #666666;
+    border-color: #606060;
 }
 
 QPushButton:pressed {
     background-color: #303030;
+    border-color: #454545;
 }
 
 QPushButton:disabled {
-    color: #777777;
     background-color: #303030;
+    color: #777777;
+    border-color: #383838;
 }
 
-/* Bouton par défaut - accent GTK4 */
+/* Bouton par défaut - Accent Adwaita Blue */
 QPushButton:default {
-    border: 2px solid #3584E4;
-    border-radius: 8px;
+    background-color: #3584E4;
+    color: #FFFFFF;
+    border: 1px solid #3584E4;
 }
 
 QPushButton:default:hover {
-    border-color: #62A0EA;
+    background-color: #4A91E8;
+    border-color: #4A91E8;
 }
 
 QPushButton:default:pressed {
+    background-color: #1C71D8;
     border-color: #1C71D8;
 }
+
+
+/* Bouton dans les dialogues */
+QDialog QPushButton,
+QDialog QToolButton {
+    color: #F6F5F4;
+    padding: 10px;
+    border: 0px solid #505050;
+    border-radius: 12px;
+    margin: 3px;
+    font-weight: 600;
+}
+
+QDialog QPushButton:hover,
+QDialog QToolButton:hover {
+    background-color: #454545;
+    border-color: #606060;
+}
+
+QDialog QPushButton:pressed,
+QDialog QToolButton:pressed {
+    background-color: #303030;
+}
+
+QDialog QPushButton:disabled,
+QDialog QToolButton:disabled {
+    background-color: #303030;
+    color: #777777;
+    border-color: #383838;
+}
+
+/* Focus clavier */
+QDialog QPushButton:focus,
+QDialog QToolButton:focus {
+    border: 2px solid #3584E4;
+}
+
+/* Bouton par défaut dans les dialogues */
+QDialog QPushButton:default {
+    background-color: #3584E4;
+    color: #FFFFFF;
+    border: 1px solid #3584E4;
+}
+
+QDialog QPushButton:default:hover {
+    background-color: #4A91E8;
+}
+
+QDialog QPushButton:default:pressed {
+    background-color: #1C71D8;
+}
+
+
 
 
 /* Champ de saisie */
@@ -487,34 +547,6 @@ QRadioButton:disabled {
 }
 
 
-/* Boutons dans les dialogues */
-QDialog QPushButton,
-QDialog QToolButton {
-    background-color: #383838;
-    color: #FFFFFF;
-    border: 1px solid #555555;
-    border-radius: 6px;
-    padding: 4px 8px;
-    min-height: 25px;
-}
-
-QDialog QPushButton:hover,
-QDialog QToolButton:hover {
-    background-color: #454545;
-    border-color: #3584E4;
-}
-
-QDialog QPushButton:pressed,
-QDialog QToolButton:pressed {
-    background-color: #3584E4;
-}
-
-QDialog QPushButton:focus,
-QDialog QToolButton:focus {
-    border: 1px solid #3584E4;
-}
-
-
 /* Aperçu avant impression : boutons sans bordure */
 QPrintPreviewDialog QToolButton {
     background-color: transparent;
@@ -544,8 +576,8 @@ QHeaderView::section {
     padding: 6px;
     background-color: #303030;
     color: #FFFFFF;
-    border-left: 1px solid #555555;
-}
+    border-left: 1px solid #353535;
+} 
 
 QTreeView::item {
     padding: 0px;
@@ -594,6 +626,32 @@ QToolTip {
     border-radius: 6px;
     padding: 4px;
     color: #FFFFFF;
+}
+
+
+
+/* MenuBar */
+QMenuBar {
+    background-color: #303030;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px 7px 10px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    color: #C0BFBC;
+    padding: 5px 10px;
+}
+
+QMenuBar::item:selected {
+    color: #FFFFFF;
+    background-color: #383838;
+    border-radius: 5px;
+}
+
+QMenuBar::item:pressed {
+    background-color: #454545;
 }
 
 
@@ -648,30 +706,6 @@ QMenu::right-arrow {
     margin-right: 15px;
 }
 
-/* MenuBar */
-QMenuBar {
-    background-color: #242424;
-    color: #FFFFFF;
-    border: none;
-    padding: 5px 10px 7px 10px;
-}
-
-QMenuBar::item {
-    background: transparent;
-    color: #C0BFBC;
-    padding: 5px 10px;
-}
-
-QMenuBar::item:selected {
-    color: #FFFFFF;
-    background-color: #383838;
-    border-radius: 5px;
-}
-
-QMenuBar::item:pressed {
-    background-color: #454545;
-}
-
 
 /* TabBar */
 QTabBar::tab {
@@ -710,6 +744,6 @@ QTabBar QToolButton:disabled {
 /* Zone de contenu */
 QTabWidget::pane {
     background-color: #242424;
-    border: 1px solid #55555510;
+    border: 1px solid #353535;
     border-radius: 5px;
 }
