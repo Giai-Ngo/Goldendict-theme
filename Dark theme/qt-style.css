@@ -729,12 +729,10 @@ QTabBar::tab:hover {
 }
 
 QTabBar QToolButton {
-    min-width: 18px;
-    min-height: 18px;
-    border-radius: 0px;
     background: #2e2e31;
-    border: none;
-    padding: 4px;
+    border-radius: 0px;
+    border: 0px solid #3584E4;
+    margin: 0px;
 }
 
 QTabBar QToolButton:disabled {
