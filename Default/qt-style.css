@@ -156,44 +156,107 @@ QLabel {
 }
 
 
-/* BOUTONS */
-
+/* Boutons standards */
 QPushButton {
-    background-color: #FFFFFF;
-    color: #2E3436;
-    padding: 8px 12px;
-    border: 1px solid #C7C6C5;
-    border-radius: 8px;
+    background-color: #E8E8E7;
+    color: #241F31;
+    min-width: 20px;
+    min-height: 20px;
+    border: 1px solid #D5D4D2;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-weight: 600;
 }
 
 QPushButton:hover {
-    background-color: #F0EFEE;
-    border-color: #92918F;
+    background-color: #DEDEDC;
+    border-color: #C6C6C4;
 }
 
 QPushButton:pressed {
-    background-color: #E0DFDE;
+    background-color: #D0D0CE;
+    border-color: #B8B8B6;
 }
 
 QPushButton:disabled {
+    background-color: #F3F3F2;
     color: #92918F;
-    background-color: #F0EFEE;
+    border-color: #E5E5E3;
 }
 
-/* Bouton par défaut - accent GTK4 */
+/* Bouton par défaut */
 
 QPushButton:default {
-    border: 2px solid #3584E4;
-    border-radius: 8px;
+    background-color: #3584E4;
+    color: #FFFFFF;
+    border: 1px solid #3584E4;
 }
 
 QPushButton:default:hover {
-    border-color: #1C71D8;
+    background-color: #4A91E8;
+    border-color: #4A91E8;
 }
 
 QPushButton:default:pressed {
-    border-color: #15539E;
+    background-color: #1C71D8;
+    border-color: #1C71D8;
 }
+
+QPushButton:default:disabled {
+    background-color: #A8C8ED;
+    color: #FFFFFF;
+    border-color: #A8C8ED;
+}
+
+/* BOUTONS DANS LES DIALOGUES */
+
+QDialog QPushButton,
+QDialog QToolButton {
+    color: #241F31;
+    padding: 10px;
+    border: 0px solid #D5D4D2;
+    border-radius: 12px;
+    margin: 3px;
+    font-weight: 600;
+}
+
+QDialog QPushButton:hover,
+QDialog QToolButton:hover {
+    background-color: #DEDEDC;
+    border-color: #C6C6C4;
+}
+
+QDialog QPushButton:pressed,
+QDialog QToolButton:pressed {
+    background-color: #D0D0CE;
+    border-color: #B8B8B6;
+}
+
+QDialog QPushButton:disabled,
+QDialog QToolButton:disabled {
+    background-color: #F3F3F2;
+    color: #92918F;
+    border-color: #E5E5E3;
+}
+
+/* Bouton par défaut dans les dialogues */
+
+QDialog QPushButton:default {
+    background-color: #3584E4;
+    color: #FFFFFF;
+    border: 1px solid #3584E4;
+}
+
+QDialog QPushButton:default:hover {
+    background-color: #4A91E8;
+    border-color: #4A91E8;
+}
+
+QDialog QPushButton:default:pressed {
+    background-color: #1C71D8;
+    border-color: #1C71D8;
+}
+
 
 
 /* CHAMP DE SAISIE */
@@ -499,34 +562,6 @@ QRadioButton:disabled {
     color: #92918F;
 }
 
-
-/* BOUTONS DANS LES DIALOGUES */
-
-QDialog QPushButton,
-QDialog QToolButton {
-    background-color: #FFFFFF;
-    color: #2E3436;
-    border: 1px solid #C7C6C5;
-    border-radius: 6px;
-    padding: 4px 8px;
-    min-height: 25px;
-}
-
-QDialog QPushButton:hover,
-QDialog QToolButton:hover {
-    background-color: #F0EFEE;
-    border-color: #3584E4;
-}
-
-QDialog QPushButton:pressed,
-QDialog QToolButton:pressed {
-    background-color: #DCEBFA;
-}
-
-QDialog QPushButton:focus,
-QDialog QToolButton:focus {
-    border: 1px solid #3584E4;
-}
 
 
 /* APERÇU AVANT IMPRESSION */
